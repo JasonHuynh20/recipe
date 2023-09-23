@@ -7,40 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" onclick="showPage('main')">Main</a>
-            <a href="#" onclick="showPage('bulking')">Bulking</a>
-            <a href="#" onclick="showPage('cutting')">Cutting</a>
-            <a href="#" onclick="showPage('chef-esque')">Chef-esque</a>
-            <a href="#" onclick="showPage('search')">Search</a>
-        </nav>
-    </header>
+    <nav class="fixed-nav">
+        <div class="nav-left">
+            <h1>Jason's Recipes</h1>
+        </div>
+        <div class="nav-right">
+            <a href="#" id="mainNav">Main</a>
+            <a href="#" id="bulkingNav">Bulking</a>
+            <a href="#" id="cuttingNav">Cutting</a>
+            <a href="#" id="chefesqueNav">Chef-esque</a>
+        </div>
+    </nav>
 
-    <div class="container" id="mainPage">
-        <h1>Welcome to Our Recipe Collection</h1>
-        <!-- Main page content here -->
+    <!-- Hardcoded image section for the Main page -->
+    <div id="mainImage">
+        <img src="img/main.jpg" alt="Main Image" style="width: 100%;">
     </div>
 
-    <div class="container" id="bulkingPage" style="display:none;">
-        <h1>Bulking Recipes</h1>
-        <!-- Bulking page content here -->
-    </div>
-
-    <div class="container" id="cuttingPage" style="display:none;">
-        <h1>Cutting Recipes</h1>
-        <!-- Cutting page content here -->
-    </div>
-
-    <div class="container" id="chefEsquePage" style="display:none;">
-        <h1>Chef-esque Recipes</h1>
-        <!-- Chef-esque page content here -->
-    </div>
-
-    <div class="container" id="searchPage" style="display:none;">
-        <h1>Search for Recipes</h1>
-        <!-- Search page content here -->
-    </div>
+    <!-- Recipe container with dynamic position -->
+    <div id="recipeContainer"></div>
 
     <script src="script.js"></script>
 </body>

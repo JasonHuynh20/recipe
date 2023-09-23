@@ -1,33 +1,117 @@
+/* Reset some default styles */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav {
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    display: none;
 }
 
-.container h1 {
+/* Style for the main background image */
+.main-background {
+    background-image: url('img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
+    padding: 100px 0;
+    position: relative; /* Add this line */
+}
+
+/* CSS to style the fixed navigation bar */
+.fixed-nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px; /* Increase the top and right padding */
+    position: fixed; /* Change position to fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Add z-index to ensure it's above other content */
+}
+
+/* CSS to style the recipe container */
+#recipeContainer {
+    margin-top: 100px; /* Add a margin to push it down */
+    padding: 20px;
+}
+
+
+.nav-left h1 {
+    margin: 0;
+    color: white; /* Change the color to your desired text color */
+}
+
+.nav-right a {
+    color: white; /* Change the color to your desired text color */
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+
+/* Style for the recipe section */
+#recipePage {
+    background-color: #f5f5f5;
+}
+
+.recipe-name {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: red; /* Change color on hover (e.g., orange) */
+}
+
+
+/* Recipe card styles */
+.recipe-card {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe name styles */
+.recipe-name {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Style for the main background image */
+.main-background {
+    background-image: url('img/main.jpg');
+    background-size: cover;
+    background-position: top; /* Change this line */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
 }
