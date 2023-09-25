@@ -23,6 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Get references to the elements
+const steakElement = document.getElementById('steak');
+
+// Set the initial transform values
+let steakElementTransform = 360;
+
+// Function to update the parallax effect
+function updateParallax() {
+  const scrollValue = window.scrollY;
+
+  // Adjust the translation values based on your desired effect
+  steakElementTransform = 360 - scrollValue * 0.2; // Adjust the factor as needed
+
+  // Apply the transformations
+  steakElement.style.transform = `translateY(${steakElementTransform}px)`;
+}
+
+// Attach the updateParallax function to the scroll event
+window.addEventListener('scroll', updateParallax);
+
+// Call updateParallax initially to set the initial positions
+updateParallax();
+
 
 document.addEventListener("scroll", function () {
   var firstCard = document.querySelector(".card:first-of-type");
@@ -58,14 +81,6 @@ document.addEventListener("scroll", function () {
   var mainText = document.querySelector(".gradient-text");
   var textPosition = -scrollOffset + "px";
   mainText.style.transform = `translateY(${textPosition})`;
-
-  var steak = document.getElementById("steak");
-  var scrollOffset2 = Math.min(window.scrollY / 7, 200);
-  steak.style.transform = `translateY(-${scrollOffset2}px)`;
-
-  var mainText2 = document.querySelector(".gradient-text2");
-  var textPosition2 = -scrollOffset2 + "px";
-  mainText2.style.transform = `translateY(${textPosition2})`;
 });
 
 const form = document.querySelector("form"),
