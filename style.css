@@ -244,7 +244,7 @@ nav a.current {
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 0;
+    bottom: 0;
     width: 33.33%;
     height: 100%;
     display: flex;
@@ -313,6 +313,20 @@ h1.highlight-title {
 }
 
 .gradient-text {
+    font-size: 4rem;
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-size: 200% 200%;
+    /* Increase the size of the background */
+    animation: animateGradient 2s linear infinite;
+    /* Adjust the animation duration (2s) */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.gradient-text2 {
     font-size: 4rem;
     position: absolute;
     color: transparent;

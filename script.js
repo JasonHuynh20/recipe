@@ -58,6 +58,14 @@ document.addEventListener("scroll", function () {
   var mainText = document.querySelector(".gradient-text");
   var textPosition = -scrollOffset + "px";
   mainText.style.transform = `translateY(${textPosition})`;
+
+  var steak = document.getElementById("steak");
+  var scrollOffset2 = Math.min(window.scrollY / 7, 200);
+  steak.style.transform = `translateY(-${scrollOffset2}px)`;
+
+  var mainText2 = document.querySelector(".gradient-text2");
+  var textPosition2 = -scrollOffset2 + "px";
+  mainText2.style.transform = `translateY(${textPosition2})`;
 });
 
 const form = document.querySelector("form"),
