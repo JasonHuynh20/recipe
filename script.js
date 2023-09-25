@@ -122,45 +122,42 @@ numbers.forEach((number) => {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Event listener for "All" link
-  document.getElementById("allNav").addEventListener("click", function () {
-    loadRecipes("All");
+  document.getElementById("allNav").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent the default link behavior
+    const scrollToY = 0; // Set the Y position you want to scroll to (top of the page)
+
+    // Use window.scrollTo with smooth behavior
+    window.scrollTo({
+      top: scrollToY,
+      behavior: "smooth",
+    });
   });
+
 
   // Event listener for "Big Boy Meals" link
   document.getElementById("bigNav").addEventListener("click", function () {
-    loadRecipes("Big");
+    loadRecipes("big");
   });
 
   // Event listener for "Sizzle 'n' Shrink" link
   document.getElementById("shrinkNav").addEventListener("click", function () {
-    loadRecipes("Shrink");
+    loadRecipes("shrink");
   });
 
   // Event listener for "Cozy Cookin'" link
   document.getElementById("cozyNav").addEventListener("click", function () {
-    loadRecipes("Cozy");
+    loadRecipes("cozy");
   });
 
   // Event listener for "Chef-Esque" link
   document.getElementById("chefNav").addEventListener("click", function () {
-    loadRecipes("Chef");
+    loadRecipes("chef");
   });
 
 
   function loadRecipes(type) {
-    // Load data from recipeSource.json using fetch
-    fetch("recipeSource.json")
-      .then((response) => response.json())
-      .then((data) => {
-        // Filter recipes based on the selected type
-        const filteredRecipes = data.recipes.filter((recipe) => recipe.Type === type);
-
-        // Redirect to list.html with query parameter
-        window.location.href = `list.html?type=${type}`;
-      })
-      .catch((error) => {
-        console.error("Error loading data: ", error);
-      });
+    // Redirect to list.html with query parameter
+    window.location.href = `list.html?type=${type}`;
   }
 });
 
