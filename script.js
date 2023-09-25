@@ -23,6 +23,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
+const section = document.querySelector("section"),
+  overlay = document.querySelector(".overlay"),
+  showBtn = document.querySelector(".show-modal"),
+  closeBtn = document.querySelector(".close-btn");
+
+// showBtn.addEventListener("click", () => section.classList.add("active") console.log("Hello"));
+showBtn.addEventListener("click", () => {
+  section.classList.add("active");
+  console.log("Hello");
+});
+
+
+overlay.addEventListener("click", () =>
+  section.classList.remove("active")
+);
+
+// Hide the modal box when the close button is clicked
+closeBtn.addEventListener("click", () => {
+  section.classList.remove("active");
+  console.log("goodbye");
+});
+
+
+
+
+
+
+
+
+
+
+
 // Get references to the elements
 const steakElement = document.getElementById('steak');
 
