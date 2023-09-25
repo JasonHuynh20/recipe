@@ -180,6 +180,14 @@ nav a:hover {
     transition: background 0.3s, color 0.3s;
 }
 
+nav a.current {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+}
+
 .nav-left h1 {
     margin: 0;
     color: white;
@@ -273,8 +281,12 @@ nav a:hover {
     color: transparent;
 }
 
-.highlight-title {
-    color: linear-gradient(45deg, var(--p-color), var(--s-color));
+h1.highlight-title {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
 }
 
 ::-webkit-scrollbar {

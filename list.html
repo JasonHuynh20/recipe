@@ -7,7 +7,7 @@
     <title>Kitchen Chronicles</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -30,31 +30,7 @@
         </div>
     </nav>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Parse the type query parameter from the URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const type = urlParams.get("type");
-
-            // Display recipes based on the type
-            if (type) {
-                // Filter recipes based on the type and display them
-                fetch("recipeSource.json")
-                    .then((response) => response.json())
-                    .then((data) => {
-                        const filteredRecipes = data.recipes.filter((recipe) => recipe.Type === type);
-
-                        // Display filtered recipes on the page as needed
-                        // You can use JavaScript to create HTML elements and populate them with recipe data
-                    })
-                    .catch((error) => {
-                        console.error("Error loading data: ", error);
-                    });
-            }
-        });
-    </script>
-
-    <!-- <script src="script.js" defer></script> -->
+    <script src="listScript.js" defer></script>
 </body>
 
 </html>

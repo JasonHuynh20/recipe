@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the "Macro Calculator" link
   const macroCalculatorLink = document.getElementById("macroCalculatorLink");
 
   // Get a reference to the "Macro-Nutrients Calculator" section
   const macroCalculatorSection = document.getElementById("macroCalculator");
 
+  const allNav = document.getElementById("allNav");
+  allNav.classList.add("current");
+
   // Add a click event listener to the link
-  macroCalculatorLink.addEventListener("click", function(event) {
+  macroCalculatorLink.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default link behavior
 
     // Calculate the scroll position to reach the "Macro-Nutrients Calculator" section
@@ -23,11 +26,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("scroll", function () {
   var firstCard = document.querySelector(".card:first-of-type");
+  // Get a reference to the "Macro-Nutrients Calculator" section
+  const macroCalculatorSection = document.getElementById("macroCalculator");
 
   if (window.scrollY >= (firstCard.clientHeight * 0.7)) {
     document.body.classList.add("scroll-active");
   } else {
     document.body.classList.remove("scroll-active", "scroll-active-img");
+  }
+
+  if (window.scrollY >= (macroCalculatorSection.offsetTop - 100)) {
+    const macroCalculatorLink = document.getElementById("macroCalculatorLink");
+    macroCalculatorLink.classList.add("current");
+  } else {
+    macroCalculatorLink.classList.remove("current");
+  }
+
+  if (window.scrollY < (macroCalculatorSection.offsetTop - 100)) {
+    const allNav = document.getElementById("allNav");
+    allNav.classList.add("current");
+  } else {
+    allNav.classList.remove("current");
   }
 });
 
@@ -127,10 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadRecipes("Chef");
   });
 
-  // Event listener for "Macro Calculator" link (optional)
-  document.getElementById("macroCalculatorLink").addEventListener("click", function () {
-    // Handle the Macro Calculator link if needed
-  });
 
   function loadRecipes(type) {
     // Load data from recipeSource.json using fetch

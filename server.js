@@ -1,75 +1,58 @@
-const http = require('http');
+const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
-const server = http.createServer((req, res) => {
-  // Define the root directory for serving files (change to your project directory)
-  const rootDirectory = __dirname; // By default, it uses the directory where server.js is located
-
-  // Define a route to serve the JSON file
-  if (req.url === '/recipeSource.json') {
-    const filePath = path.join(rootDirectory, 'recipeSource.json');
-
-    // Read and serve the JSON file
-    fs.readFile(filePath, (err, data) => {
-      if (err) {
-        // Handle errors (e.g., file not found)
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('File not found');
-      } else {
-        // Set the appropriate Content-Type header
-        res.setHeader('Content-Type', 'application/json');
-
-        // Send the JSON data as the response
-        res.end(data);
-      }
-    });
-  } else {
-    // For other routes, serve your static files (HTML, CSS, JavaScript, etc.)
-    const requestedPath = req.url === '/' ? '/index.html' : req.url;
-    const filePath = path.join(rootDirectory, requestedPath);
-
-    // Read and serve the file
-    fs.readFile(filePath, (err, data) => {
-      if (err) {
-        // Handle errors (e.g., file not found)
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('File not found');
-      } else {
-        // Determine the content type based on the file extension
-        const extname = path.extname(filePath);
-        const contentType = getContentType(extname);
-
-        // Set the appropriate Content-Type header
-        res.setHeader('Content-Type', contentType);
-
-        // Send the file data as the response
-        res.end(data);
-      }
-    });
-  }
-});
-
-// Define MIME types for common file extensions
-function getContentType(extname) {
-  switch (extname) {
-    case '.html':
-      return 'text/html';
-    case '.css':
-      return 'text/css';
-    case '.js':
-      return 'text/javascript';
-    case '.json':
-      return 'application/json';
-    default:
-      return 'text/plain';
-  }
-}
-
-// Set the port number for the server to listen on
+const app = express();
 const port = process.env.PORT || 3000;
 
-// Start the server
-server.listen(port, () => {
+const rootDirectory = __dirname;
+
+// Define a route to serve the JSON file
+app.get('/recipeSource.json', (req, res) => {
+  const filePath = path.join(rootDirectory, 'recipeSource.json');
+
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      res.status(404).send('File not found');
+    } else {
+      res.setHeader('Content-Type', 'application/json');
+      res.send(data);
+    }
+  });
+});
+
+
+// Define a route to serve the list.html file
+app.get('/list', (req, res) => {
+  const type = req.query.type;
+  const filePath = path.join(rootDirectory, 'list.html');
+
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(404).send('File not found');
+    } else {
+      res.setHeader('Content-Type', 'text/html');
+      res.send(data);
+    }
+  });
+});
+
+// Serve static files (HTML, CSS, JavaScript, etc.)
+app.use(express.static(rootDirectory));
+
+// Start the Express server
+app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+
+/*
+
+In the script file for the html file, make it so that onload, we get the query
+then we fetch the source data
+then we populate the page with said data
+
+
+
+*/
