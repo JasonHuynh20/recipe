@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
     text.innerText = "Please enter a valid number";
   } else {
     form.classList.replace("error", "valid"); // Replacing error class with valid class
-    text.innerText = "This is a valid number";
+    text.innerText = "Calculated";
 
     const activeElement = document.querySelector(".active");
     const eInput = document.querySelector("input.input"); // Assuming this is your input element
