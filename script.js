@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Get a reference to the "Macro Calculator" link
+  const macroCalculatorLink = document.getElementById("macroCalculatorLink");
+
+  // Get a reference to the "Macro-Nutrients Calculator" section
+  const macroCalculatorSection = document.getElementById("macroCalculator");
+
+  // Add a click event listener to the link
+  macroCalculatorLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    // Calculate the scroll position to reach the "Macro-Nutrients Calculator" section
+    const scrollToY = macroCalculatorSection.offsetTop - 50;
+
+    // Use smooth scrolling for a better user experience
+    window.scrollTo({
+      top: scrollToY,
+      behavior: "smooth"
+    });
+  });
+});
+
+
 document.addEventListener("scroll", function () {
   var firstCard = document.querySelector(".card:first-of-type");
 

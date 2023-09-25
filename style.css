@@ -266,6 +266,13 @@ nav a:hover {
     color: transparent;
 }
 
+.current {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .highlight-title {
     color: linear-gradient(45deg, var(--p-color), var(--s-color));
 }
