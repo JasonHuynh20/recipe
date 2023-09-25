@@ -5,6 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 :root {
     /* --p-color: #ff3399;
@@ -19,6 +26,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
     margin: 0;
     background: #282828;
     overflow-x: hidden;
@@ -43,9 +51,13 @@ body {
 }
 
 .nav-icon {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    font-size: 2.5rem;
+    padding-left: 20px;
 }
 
 nav {
@@ -101,4 +113,194 @@ h1.highlight-title {
     -webkit-background-clip: text;
     color: transparent;
     transition: background 0.3s, color 0.3s;
+}
+
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr)); /* Automatically adjust columns based on available width with a minimum width of 275px */
+    gap: 20px;
+    padding: 150px 20px; /* Add padding from the top and sides */
+    justify-content: space-evenly; /* Evenly space the items horizontally */
+    row-gap: 20px; /* Set vertical gap equal to horizontal gap */
+}
+
+
+
+
+.wrapper {
+    height: 400px;
+    width: 275px;
+    position: relative;
+    margin: 0 40px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    color: white;
+    text-align: center;
+    display: flex; /* Center horizontally and vertically */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.wrapper .flip-card {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: black;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    color: white;
+    text-align: center;
+    display: flex; /* Center horizontally and vertically */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.wrapper:hover > .front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover > .back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white; /* Set text color to white */
+}
+
+.back-face .info .title {
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.back-face.info p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: white; /* Set text color to white */
+}
+
+.back-face .info {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.flip-card.front-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flip-card.back-face .info a {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 50px;
+}
+
+
+.flip-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flip-card.back-face .info a:hover {
+    background: linear-gradient(45deg, #FF4500, #ffa047);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.wrapper .flip-card.back-face .info {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.wrapper .flip-card.back-face .info .title {
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.wrapper .flip-card.back-face p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: white; /* Make <p> tags white */
+}
+
+.recipe-icon{
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+.recipe-img {
+    width: 225px;
+    height: 225px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
 }

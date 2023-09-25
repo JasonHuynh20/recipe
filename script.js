@@ -1,11 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get a reference to the "Macro Calculator" link
+  // Check if the query parameter "type" is equal to "calc"
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const typeParam = urlParams.get("type");
   const macroCalculatorLink = document.getElementById("macroCalculatorLink");
-
-  // Get a reference to the "Macro-Nutrients Calculator" section
   const macroCalculatorSection = document.getElementById("macroCalculator");
-
   const allNav = document.getElementById("allNav");
+  const scrollToY = macroCalculatorSection.offsetTop - 50;
+
+  if (typeParam === "calc") {
+    window.scrollTo({
+      top: scrollToY,
+      behavior: "smooth"
+    });
+
+    // Remove the "type" query parameter from the URL
+    urlParams.delete("type");
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    history.replaceState({}, document.title, newUrl);
+  }
+
+
+
   allNav.classList.add("current");
 
   // Add a click event listener to the link
@@ -35,7 +51,6 @@ const section = document.querySelector("section"),
 // showBtn.addEventListener("click", () => section.classList.add("active") console.log("Hello"));
 showBtn.addEventListener("click", () => {
   section.classList.add("active");
-  console.log("Hello");
 });
 
 
@@ -46,14 +61,7 @@ overlay.addEventListener("click", () =>
 // Hide the modal box when the close button is clicked
 closeBtn.addEventListener("click", () => {
   section.classList.remove("active");
-  console.log("goodbye");
 });
-
-
-
-
-
-
 
 
 
@@ -195,29 +203,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Event listener for "Big Boy Meals" link
   document.getElementById("bigNav").addEventListener("click", function () {
-    loadRecipes("big");
+    window.location.href = `list.html?type=big`;
   });
 
   // Event listener for "Sizzle 'n' Shrink" link
   document.getElementById("shrinkNav").addEventListener("click", function () {
-    loadRecipes("shrink");
+    window.location.href = `list.html?type=shrink`;
   });
 
   // Event listener for "Cozy Cookin'" link
   document.getElementById("cozyNav").addEventListener("click", function () {
-    loadRecipes("cozy");
+    window.location.href = `list.html?type=cozy`;
   });
 
   // Event listener for "Chef-Esque" link
   document.getElementById("chefNav").addEventListener("click", function () {
-    loadRecipes("chef");
+    window.location.href = `list.html?type=chef`;
+  });
+
+  // Event listener for "Big Boy Meals" link
+  document.getElementById("bigCardLink").addEventListener("click", function () {
+    window.location.href = `list.html?type=big`;
+  });
+
+  // Event listener for "Sizzle 'n' Shrink" link
+  document.getElementById("shrinkCardLink").addEventListener("click", function () {
+    window.location.href = `list.html?type=shrink`;
+  });
+
+  // Event listener for "Cozy Cookin'" link
+  document.getElementById("cozyCardLink").addEventListener("click", function () {
+    window.location.href = `list.html?type=cozy`;
+  });
+
+  // Event listener for "Chef-Esque" link
+  document.getElementById("chefCardLink").addEventListener("click", function () {
+    window.location.href = `list.html?type=chef`;
   });
 
 
-  function loadRecipes(type) {
-    // Redirect to list.html with query parameter
-    window.location.href = `list.html?type=${type}`;
-  }
+
 });
 
 
