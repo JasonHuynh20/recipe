@@ -1,205 +1,337 @@
 {
-    "recipes": [
-      {
-        "Title": "Spaghetti Carbonara",
-        "TotalTime": "20 minutes",
-        "ServingSize": "4 servings",
-        "Type": "Bulking",
-        "Calories": 450,
-        "Protein": "15g",
-        "Carbs": "40g",
-        "Ingredients": [
-          {
-            "FoodItem": "Spaghetti",
-            "IngredientsList": [
-              "8 ounces spaghetti"
-            ]
-          },
-          {
-            "FoodItem": "Bacon",
-            "IngredientsList": [
-              "4 slices bacon, chopped"
-            ]
-          },
-          {
-            "FoodItem": "Eggs",
-            "IngredientsList": [
-              "2 large eggs"
-            ]
-          },
-          {
-            "FoodItem": "Parmesan Cheese",
-            "IngredientsList": [
-              "1 cup grated Parmesan cheese"
-            ]
-          },
-          {
-            "FoodItem": "Black Pepper",
-            "IngredientsList": [
-              "Freshly ground black pepper to taste"
-            ]
-          }
-        ],
-        "Instructions": [
-          "Cook spaghetti according to package instructions. Drain and set aside.",
-          "In a skillet, cook chopped bacon until crispy. Remove from heat and drain on paper towels.",
-          "In a bowl, whisk together eggs and grated Parmesan cheese.",
-          "Toss the cooked spaghetti with the egg and cheese mixture until well coated. The heat from the spaghetti will cook the eggs and create a creamy sauce.",
-          "Stir in the crispy bacon and season with freshly ground black pepper.",
-          "Serve hot."
-        ]
-      },
-      {
-        "Title": "Caesar Salad",
-        "TotalTime": "15 minutes",
-        "ServingSize": "4 servings",
-        "Type": "Cutting",
-        "Calories": 250,
-        "Protein": "6g",
-        "Carbs": "15g",
-        "Ingredients": [
-          {
-            "FoodItem": "Romaine Lettuce",
-            "IngredientsList": [
-              "1 head romaine lettuce, chopped"
-            ]
-          },
-          {
-            "FoodItem": "Croutons",
-            "IngredientsList": [
-              "1 cup croutons"
-            ]
-          },
-          {
-            "FoodItem": "Parmesan Cheese",
-            "IngredientsList": [
-              "1/2 cup grated Parmesan cheese"
-            ]
-          },
-          {
-            "FoodItem": "Caesar Dressing",
-            "IngredientsList": [
-              "1/4 cup Caesar dressing"
-            ]
-          },
-          {
-            "FoodItem": "Lemon Juice",
-            "IngredientsList": [
-              "1 tablespoon lemon juice"
-            ]
-          }
-        ],
-        "Instructions": [
-          "In a large salad bowl, combine chopped romaine lettuce and croutons.",
-          "Sprinkle grated Parmesan cheese over the lettuce and croutons.",
-          "Drizzle Caesar dressing and lemon juice over the salad.",
-          "Toss everything together until well coated.",
-          "Serve immediately as a side dish or with grilled chicken for a main course."
-        ]
-      },
-      {
-        "Title": "Vegetable Stir-Fry",
-        "TotalTime": "25 minutes",
-        "ServingSize": "4 servings",
-        "Type": "ChefEsque",
-        "Calories": 180,
-        "Protein": "5g",
-        "Carbs": "25g",
-        "Ingredients": [
-          {
-            "FoodItem": "Mixed Vegetables",
-            "IngredientsList": [
-              "2 cups mixed vegetables (broccoli, bell peppers, carrots, snap peas)"
-            ]
-          },
-          {
-            "FoodItem": "Tofu",
-            "IngredientsList": [
-              "8 ounces tofu, cubed"
-            ]
-          },
-          {
-            "FoodItem": "Soy Sauce",
-            "IngredientsList": [
-              "2 tablespoons soy sauce"
-            ]
-          },
-          {
-            "FoodItem": "Sesame Oil",
-            "IngredientsList": [
-              "1 tablespoon sesame oil"
-            ]
-          },
-          {
-            "FoodItem": "Garlic",
-            "IngredientsList": [
-              "2 cloves garlic, minced"
-            ]
-          }
-        ],
-        "Instructions": [
-          "In a wok or large skillet, heat sesame oil over medium-high heat.",
-          "Add minced garlic and stir-fry for about 30 seconds until fragrant.",
-          "Add tofu cubes and stir-fry until lightly browned.",
-          "Add mixed vegetables and continue to stir-fry until they are tender yet crisp, about 4-5 minutes.",
-          "Drizzle soy sauce over the stir-fry and toss everything together for another 1-2 minutes.",
-          "Serve hot as a healthy and delicious meal."
-        ]
-      },
-      {
-        "Title": "Grilled Salmon with Lemon Butter Sauce",
-        "TotalTime": "30 minutes",
-        "ServingSize": "2 servings",
-        "Type": "ChefEsque",
-        "Calories": "Approximately 350 calories per serving",
-        "Protein": "Approximately 25g per serving",
-        "Carbs": "Approximately 5g per serving",
-        "Ingredients": [
-          {
-            "FoodItem": "Salmon fillets",
-            "IngredientsList": ["2 salmon fillets (6-8 ounces each)"]
-          },
-          {
-            "FoodItem": "Olive oil",
-            "IngredientsList": ["2 tablespoons olive oil"]
-          },
-          {
-            "FoodItem": "Salt and pepper",
-            "IngredientsList": ["Salt and pepper to taste"]
-          },
-          {
-            "FoodItem": "Garlic",
-            "IngredientsList": ["2 cloves garlic, minced"]
-          },
-          {
-            "FoodItem": "Chicken broth",
-            "IngredientsList": ["1/4 cup chicken broth"]
-          },
-          {
-            "FoodItem": "Lemon",
-            "IngredientsList": ["Juice of 1 lemon", "Zest of 1 lemon"]
-          },
-          {
-            "FoodItem": "Unsalted butter",
-            "IngredientsList": ["2 tablespoons unsalted butter"]
-          },
-          {
-            "FoodItem": "Fresh parsley",
-            "IngredientsList": ["Fresh parsley, chopped, for garnish"]
-          }
-        ],
-        "Instructions": [
-          "Preheat your grill to medium-high heat.",
-          "Brush the salmon fillets with olive oil and season them with salt and pepper to taste.",
-          "Place the salmon fillets on the grill and cook for about 3-4 minutes per side, or until the salmon is cooked to your desired level of doneness. The salmon should easily flake with a fork when done.",
-          "While the salmon is cooking, prepare the lemon butter sauce. In a small saucepan, heat the minced garlic over medium heat for about 1 minute until fragrant but not browned.",
-          "Add the chicken broth, lemon juice, and lemon zest to the saucepan. Let it simmer for 2-3 minutes to reduce slightly.",
-          "Reduce the heat to low, then whisk in the unsalted butter until the sauce is smooth and creamy. Season with salt and pepper to taste.",
-          "Once the salmon is done, transfer it to serving plates.",
-          "Drizzle the lemon butter sauce over the grilled salmon fillets.",
-          "Garnish with chopped fresh parsley for a pop of color and added flavor.",
-          "Serve your Chef-esque Grilled Salmon with Lemon Butter Sauce immediately with your choice of side dishes, such as steamed vegetables or a fresh salad."
-        ]
-      }
-    ]
-  }
+  "recipes": [
+    {
+      "Title": "Spaghetti Carbonara",
+      "TotalTime": "20 minutes",
+      "ServingSize": "4 servings",
+      "Type": "Big",
+      "Calories": 450,
+      "Protein": "15g",
+      "Carbs": "40g",
+      "Ingredients": [
+        {
+          "FoodItem": "Spaghetti",
+          "IngredientsList": ["8 ounces spaghetti"]
+        },
+        {
+          "FoodItem": "Bacon",
+          "IngredientsList": ["4 slices bacon, chopped"]
+        },
+        {
+          "FoodItem": "Eggs",
+          "IngredientsList": ["2 large eggs"]
+        },
+        {
+          "FoodItem": "Parmesan Cheese",
+          "IngredientsList": ["1 cup grated Parmesan cheese"]
+        },
+        {
+          "FoodItem": "Black Pepper",
+          "IngredientsList": ["Freshly ground black pepper to taste"]
+        }
+      ],
+      "Instructions": [
+        "Cook spaghetti according to package instructions. Drain and set aside.",
+        "In a skillet, cook chopped bacon until crispy. Remove from heat and drain on paper towels.",
+        "In a bowl, whisk together eggs and grated Parmesan cheese.",
+        "Toss the cooked spaghetti with the egg and cheese mixture until well coated. The heat from the spaghetti will cook the eggs and create a creamy sauce.",
+        "Stir in the crispy bacon and season with freshly ground black pepper.",
+        "Serve hot."
+      ]
+    },
+    {
+      "Title": "Caesar Salad",
+      "TotalTime": "15 minutes",
+      "ServingSize": "4 servings",
+      "Type": "Shrink",
+      "Calories": 250,
+      "Protein": "6g",
+      "Carbs": "15g",
+      "Ingredients": [
+        {
+          "FoodItem": "Romaine Lettuce",
+          "IngredientsList": ["1 head romaine lettuce, chopped"]
+        },
+        {
+          "FoodItem": "Croutons",
+          "IngredientsList": ["1 cup croutons"]
+        },
+        {
+          "FoodItem": "Parmesan Cheese",
+          "IngredientsList": ["1/2 cup grated Parmesan cheese"]
+        },
+        {
+          "FoodItem": "Caesar Dressing",
+          "IngredientsList": ["1/4 cup Caesar dressing"]
+        },
+        {
+          "FoodItem": "Lemon Juice",
+          "IngredientsList": ["1 tablespoon lemon juice"]
+        }
+      ],
+      "Instructions": [
+        "In a large salad bowl, combine chopped romaine lettuce and croutons.",
+        "Sprinkle grated Parmesan cheese over the lettuce and croutons.",
+        "Drizzle Caesar dressing and lemon juice over the salad.",
+        "Toss everything together until well coated.",
+        "Serve immediately as a side dish or with grilled chicken for a main course."
+      ]
+    },
+    {
+      "Title": "Vegetable Stir-Fry",
+      "TotalTime": "25 minutes",
+      "ServingSize": "4 servings",
+      "Type": "Chef",
+      "Calories": 180,
+      "Protein": "5g",
+      "Carbs": "25g",
+      "Ingredients": [
+        {
+          "FoodItem": "Mixed Vegetables",
+          "IngredientsList": ["2 cups mixed vegetables (broccoli, bell peppers, carrots, snap peas)"]
+        },
+        {
+          "FoodItem": "Tofu",
+          "IngredientsList": ["8 ounces tofu, cubed"]
+        },
+        {
+          "FoodItem": "Soy Sauce",
+          "IngredientsList": ["2 tablespoons soy sauce"]
+        },
+        {
+          "FoodItem": "Sesame Oil",
+          "IngredientsList": ["1 tablespoon sesame oil"]
+        },
+        {
+          "FoodItem": "Garlic",
+          "IngredientsList": ["2 cloves garlic, minced"]
+        }
+      ],
+      "Instructions": [
+        "In a wok or large skillet, heat sesame oil over medium-high heat.",
+        "Add minced garlic and stir-fry for about 30 seconds until fragrant.",
+        "Add tofu cubes and stir-fry until lightly browned.",
+        "Add mixed vegetables and continue to stir-fry until they are tender yet crisp, about 4-5 minutes.",
+        "Drizzle soy sauce over the stir-fry and toss everything together for another 1-2 minutes.",
+        "Serve hot as a healthy and delicious meal."
+      ]
+    },
+    {
+      "Title": "Grilled Salmon with Lemon Butter Sauce",
+      "TotalTime": "30 minutes",
+      "ServingSize": "2 servings",
+      "Type": "Chef",
+      "Calories": "Approximately 350 calories per serving",
+      "Protein": "Approximately 25g per serving",
+      "Carbs": "Approximately 5g per serving",
+      "Ingredients": [
+        {
+          "FoodItem": "Salmon fillets",
+          "IngredientsList": ["2 salmon fillets (6-8 ounces each)"]
+        },
+        {
+          "FoodItem": "Olive oil",
+          "IngredientsList": ["2 tablespoons olive oil"]
+        },
+        {
+          "FoodItem": "Salt and pepper",
+          "IngredientsList": ["Salt and pepper to taste"]
+        },
+        {
+          "FoodItem": "Garlic",
+          "IngredientsList": ["2 cloves garlic, minced"]
+        },
+        {
+          "FoodItem": "Chicken broth",
+          "IngredientsList": ["1/4 cup chicken broth"]
+        },
+        {
+          "FoodItem": "Lemon",
+          "IngredientsList": ["Juice of 1 lemon", "Zest of 1 lemon"]
+        },
+        {
+          "FoodItem": "Unsalted butter",
+          "IngredientsList": ["2 tablespoons unsalted butter"]
+        },
+        {
+          "FoodItem": "Fresh parsley",
+          "IngredientsList": ["Fresh parsley, chopped, for garnish"]
+        }
+      ],
+      "Instructions": [
+        "Preheat your grill to medium-high heat.",
+        "Brush the salmon fillets with olive oil and season them with salt and pepper to taste.",
+        "Place the salmon fillets on the grill and cook for about 3-4 minutes per side, or until the salmon is cooked to your desired level of doneness. The salmon should easily flake with a fork when done.",
+        "While the salmon is cooking, prepare the lemon butter sauce. In a small saucepan, heat the minced garlic over medium heat for about 1 minute until fragrant but not browned.",
+        "Add the chicken broth, lemon juice, and lemon zest to the saucepan. Let it simmer for 2-3 minutes to reduce slightly.",
+        "Reduce the heat to low, then whisk in the unsalted butter until the sauce is smooth and creamy. Season with salt and pepper to taste.",
+        "Once the salmon is done, transfer it to serving plates.",
+        "Drizzle the lemon butter sauce over the grilled salmon fillets.",
+        "Garnish with chopped fresh parsley for a pop of color and added flavor.",
+        "Serve your Chef-esque Grilled Salmon with Lemon Butter Sauce immediately with your choice of side dishes, such as steamed vegetables or a fresh salad."
+      ]
+    },
+    {
+      "Title": "Creamy Tomato Soup",
+      "TotalTime": "30 minutes",
+      "ServingSize": "4 servings",
+      "Type": "Cozy",
+      "Calories": 300,
+      "Protein": "8g",
+      "Carbs": "20g",
+      "Ingredients": [
+        {
+          "FoodItem": "Tomatoes",
+          "IngredientsList": ["4 cups canned tomatoes"]
+        },
+        {
+          "FoodItem": "Heavy Cream",
+          "IngredientsList": ["1/2 cup heavy cream"]
+        },
+        {
+          "FoodItem": "Onion",
+          "IngredientsList": ["1 onion, chopped"]
+        },
+        {
+          "FoodItem": "Garlic",
+          "IngredientsList": ["2 cloves garlic, minced"]
+        },
+        {
+          "FoodItem": "Basil",
+          "IngredientsList": ["1/4 cup fresh basil leaves"]
+        },
+        {
+          "FoodItem": "Olive Oil",
+          "IngredientsList": ["2 tablespoons olive oil"]
+        },
+        {
+          "FoodItem": "Salt and Pepper",
+          "IngredientsList": ["Salt and pepper to taste"]
+        }
+      ],
+      "Instructions": [
+        "In a large pot, heat olive oil over medium heat. Add chopped onion and minced garlic. Cook until onions are soft and translucent.",
+        "Add canned tomatoes to the pot, including the juice. Bring to a simmer and cook for about 15 minutes.",
+        "Using an immersion blender, blend the tomato mixture until smooth. If you don't have an immersion blender, carefully transfer the mixture to a blender and blend until smooth, then return it to the pot.",
+        "Stir in heavy cream and fresh basil leaves. Season with salt and pepper to taste.",
+        "Simmer for an additional 5-10 minutes, stirring occasionally.",
+        "Serve hot, garnished with additional fresh basil leaves if desired."
+      ]
+    },
+    {
+      "Title": "Homestyle Beef Stew",
+      "TotalTime": "2 hours",
+      "ServingSize": "6 servings",
+      "Type": "Big",
+      "Calories": 400,
+      "Protein": "20g",
+      "Carbs": "30g",
+      "Ingredients": [
+        {
+          "FoodItem": "Beef Stew Meat",
+          "IngredientsList": ["2 pounds beef stew meat, cubed"]
+        },
+        {
+          "FoodItem": "Potatoes",
+          "IngredientsList": ["4 potatoes, peeled and cubed"]
+        },
+        {
+          "FoodItem": "Carrots",
+          "IngredientsList": ["4 carrots, sliced"]
+        },
+        {
+          "FoodItem": "Onion",
+          "IngredientsList": ["1 onion, chopped"]
+        },
+        {
+          "FoodItem": "Garlic",
+          "IngredientsList": ["2 cloves garlic, minced"]
+        },
+        {
+          "FoodItem": "Beef Broth",
+          "IngredientsList": ["4 cups beef broth"]
+        },
+        {
+          "FoodItem": "Tomato Paste",
+          "IngredientsList": ["2 tablespoons tomato paste"]
+        },
+        {
+          "FoodItem": "Flour",
+          "IngredientsList": ["2 tablespoons all-purpose flour"]
+        },
+        {
+          "FoodItem": "Olive Oil",
+          "IngredientsList": ["2 tablespoons olive oil"]
+        },
+        {
+          "FoodItem": "Salt and Pepper",
+          "IngredientsList": ["Salt and pepper to taste"]
+        }
+      ],
+      "Instructions": [
+        "In a large pot, heat olive oil over medium-high heat. Add beef stew meat and brown on all sides. Remove meat and set aside.",
+        "In the same pot, add chopped onion and minced garlic. Cook until onions are soft and translucent.",
+        "Sprinkle flour over the onions and garlic. Stir to coat evenly.",
+        "Return the browned beef stew meat to the pot. Add beef broth, tomato paste, potatoes, and carrots. Season with salt and pepper to taste.",
+        "Bring the mixture to a simmer, then reduce heat to low. Cover and simmer for about 1.5 to 2 hours, or until the beef is tender and the stew has thickened.",
+        "Serve hot as a comforting and hearty meal."
+      ]
+    },
+    {
+      "Title": "Mushroom Risotto",
+      "TotalTime": "40 minutes",
+      "ServingSize": "4 servings",
+      "Type": "Shrink",
+      "Calories": 350,
+      "Protein": "8g",
+      "Carbs": "45g",
+      "Ingredients": [
+        {
+          "FoodItem": "Arborio Rice",
+          "IngredientsList": ["1 cup Arborio rice"]
+        },
+        {
+          "FoodItem": "Mushrooms",
+          "IngredientsList": ["8 ounces mushrooms, sliced"]
+        },
+        {
+          "FoodItem": "Chicken Broth",
+          "IngredientsList": ["4 cups chicken broth"]
+        },
+        {
+          "FoodItem": "Onion",
+          "IngredientsList": ["1 onion, finely chopped"]
+        },
+        {
+          "FoodItem": "White Wine",
+          "IngredientsList": ["1/2 cup white wine"]
+        },
+        {
+          "FoodItem": "Parmesan Cheese",
+          "IngredientsList": ["1/2 cup grated Parmesan cheese"]
+        },
+        {
+          "FoodItem": "Butter",
+          "IngredientsList": ["2 tablespoons butter"]
+        },
+        {
+          "FoodItem": "Olive Oil",
+          "IngredientsList": ["2 tablespoons olive oil"]
+        },
+        {
+          "FoodItem": "Salt and Pepper",
+          "IngredientsList": ["Salt and pepper to taste"]
+        }
+      ],
+      "Instructions": [
+        "In a large saucepan, heat olive oil over medium heat. Add chopped onion and sliced mushrooms. Cook until onions are soft and mushrooms are browned.",
+        "Add Arborio rice to the saucepan. Cook and stir for about 2 minutes until the rice is lightly toasted.",
+        "Pour in white wine and cook until it is mostly absorbed by the rice.",
+        "Gradually add chicken broth, one cup at a time, stirring constantly and allowing the liquid to be absorbed before adding more.",
+        "Continue this process until the rice is creamy and tender, which should take about 20-25 minutes.",
+        "Stir in grated Parmesan cheese and butter. Season with salt and pepper to taste.",
+        "Serve hot as a rich and indulgent dish."
+      ]
+    }
+  ]
+}

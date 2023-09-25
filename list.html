@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Chronicles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-left">
+            <h1 class="highlight-title">Kitchen Chronicles</h1>
+            <img src="img/icon.png" alt="Icon" class="nav-icon">
+        </div>
+        <div class="nav-right">
+            <a href="#" id="allNav">All</a>
+            <a href="#" id="bigNav">Big Boy Meals</a>
+            <a href="#" id="shrinkNav">Sizzle 'n' Shrink</a>
+            <a href="#" id="cozyNav">Cozy Cookin'</a>
+            <a href="#" id="chefNav">Chef-Esque</a>
+            <a href="#" id="macroCalculatorLink">Macro Calculator</a>
+
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Parse the type query parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const type = urlParams.get("type");
+
+            // Display recipes based on the type
+            if (type) {
+                // Filter recipes based on the type and display them
+                fetch("recipeSource.json")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        const filteredRecipes = data.recipes.filter((recipe) => recipe.Type === type);
+
+                        // Display filtered recipes on the page as needed
+                        // You can use JavaScript to create HTML elements and populate them with recipe data
+                    })
+                    .catch((error) => {
+                        console.error("Error loading data: ", error);
+                    });
+            }
+        });
+    </script>
+
+    <!-- <script src="script.js" defer></script> -->
+</body>
+
+</html>

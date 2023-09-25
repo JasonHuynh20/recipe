@@ -98,43 +98,55 @@ numbers.forEach((number) => {
   });
 });
 
-// const notifications = document.querySelector(".notifications"),
-//   buttons = document.querySelectorAll(".buttons .btn");
-
-// // Object containing details for different types of toasts
-// const toastDetails = {
-//   timer: 5000,
-//   success: {
-//     icon: 'fa-circle-check',
-//     text: 'Success: This is a success toast.',
-//   }
-// }
-
-// const removeToast = (toast) => {
-//   toast.classList.add("hide");
-//   if (toast.timeoutId) clearTimeout(toast.timeoutId); // Clearing the timeout for the toast
-//   setTimeout(() => toast.remove(), 500); // Removing the toast after 500ms
-// }
-
-// const createToast = (id) => {
-//   // Getting the icon and text for the toast based on the id passed
-//   const { icon, text } = toastDetails[id];
-//   const toast = document.createElement("li"); // Creating a new 'li' element for the toast
-//   toast.className = `toast ${id}`; // Setting the classes for the toast
-//   // Setting the inner HTML for the toast
-//   toast.innerHTML = `<div class="column">
-//       <i class="fa-solid ${icon}"></i>
-//       <span>${text}</span>
-//       <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>
-//   </div>`;
-//   notifications.appendChild(toast); // Append the toast to the notification ul
-//   // Setting a timeout to remove the toast after the specified duration
-//   toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
-//   console.log("created noti");
-// }
 
 
-// const forkBtn = document.getElementById("success");
-// forkBtn.addEventListener("click", () => createToast(forkBtn.id));
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Event listener for "All" link
+  document.getElementById("allNav").addEventListener("click", function () {
+    loadRecipes("All");
+  });
+
+  // Event listener for "Big Boy Meals" link
+  document.getElementById("bigNav").addEventListener("click", function () {
+    loadRecipes("Big");
+  });
+
+  // Event listener for "Sizzle 'n' Shrink" link
+  document.getElementById("shrinkNav").addEventListener("click", function () {
+    loadRecipes("Shrink");
+  });
+
+  // Event listener for "Cozy Cookin'" link
+  document.getElementById("cozyNav").addEventListener("click", function () {
+    loadRecipes("Cozy");
+  });
+
+  // Event listener for "Chef-Esque" link
+  document.getElementById("chefNav").addEventListener("click", function () {
+    loadRecipes("Chef");
+  });
+
+  // Event listener for "Macro Calculator" link (optional)
+  document.getElementById("macroCalculatorLink").addEventListener("click", function () {
+    // Handle the Macro Calculator link if needed
+  });
+
+  function loadRecipes(type) {
+    // Load data from recipeSource.json using fetch
+    fetch("recipeSource.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Filter recipes based on the selected type
+        const filteredRecipes = data.recipes.filter((recipe) => recipe.Type === type);
+
+        // Redirect to list.html with query parameter
+        window.location.href = `list.html?type=${type}`;
+      })
+      .catch((error) => {
+        console.error("Error loading data: ", error);
+      });
+  }
+});
 
 
