@@ -1,32 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
+
 <body>
+    <!-- <ul class="notifications"></ul> -->
     <nav class="fixed-nav">
         <div class="nav-left">
-            <h1>Jason's Recipes</h1>
+            <h1 class="highlight-title">Culinary Creations</h1>
+            <img src="img/icon.png" alt="Icon" class="nav-icon">
         </div>
         <div class="nav-right">
-            <a href="#" id="mainNav">Main</a>
-            <a href="#" id="bulkingNav">Bulking</a>
-            <a href="#" id="cuttingNav">Cutting</a>
-            <a href="#" id="chefesqueNav">Chef-esque</a>
+            <a href="#" id="mainNav">All</a>
+            <a href="#" id="bigNav">Big Boy Meals</a>
+            <a href="#" id="cuttingNav">Sizzle 'n' Shrink</a>
+            <a href="#" id="cuttingNav">Cozy Cookin'</a>
+            <a href="#" id="chefesqueNav">Chef-Esque</a>
+            <a href="#" id="chefesqueNav">Macro Calculator</a>
         </div>
     </nav>
 
-    <!-- Hardcoded image section for the Main page -->
-    <div id="mainImage">
-        <img src="img/main.jpg" alt="Main Image" style="width: 100%;">
+    <div>
+        <div class="card">
+            <div class="card-content">
+                <h1 class="gradient-text">もっと食べる&#33;</h1>
+                <p class="fork btn" id="success">How to use a fork</p>
+            </div>
+
+            <img src="img/main.jpg" alt="Main Image">
+        </div>
+
+
+
+        <div class="card">
+            <div class="flip-wrapper">
+                <div class="wrapper">
+                    <div class="flip-card front-face">
+                        <i class="fas fa-dumbbell dumbbell-icon"></i>
+                        <h2 class="highlight">Big Boy</h2>
+                    </div>
+                    <div class="flip-card back-face">
+
+                        <div class="info">
+                            <div class="title">Big Boy Meals</div>
+                            <p>The calorie dense meals made for muscle growth and packing on weight!</p>
+                            <a href="#">View Recipes</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="wrapper">
+                    <div class="flip-card front-face">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="7em" viewBox="0 0 512 512">
+                            <!-- Define the linear gradient -->
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff3399;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Use the linear gradient for the path fill -->
+                            <path
+                                d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z"
+                                fill="url(#gradient)" />
+                        </svg>
+                        <h2 class="highlight">Sizzle 'n' Shrink</h2>
+
+                    </div>
+
+                    <div class="flip-card back-face">
+
+                        <div class="info">
+                            <div class="title">Sizzle 'n' Shrink</div>
+                            <p>The calorie deficit meals made to cut the fat and reveals those abs!</p>
+                            <a href="#">View Recipes</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="wrapper">
+                    <div class="flip-card front-face">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="7em" viewBox="0 0 512 512">
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ff3399;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+                            </linearGradient>
+                            <path fill="url(#gradient)"
+                                d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z" />
+                        </svg>
+
+                        <h2 class="highlight">Cozy Cookin'</h2>
+
+                    </div>
+
+                    <div class="flip-card back-face">
+
+                        <div class="info">
+                            <div class="title">Cozy Cookin'</div>
+                            <p>Who cares about looks and presentation. What matters is how comforting it is!</p>
+                            <a href="#">View Recipes</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="wrapper">
+                    <div class="flip-card front-face">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="7em" viewBox="0 0 576 512">
+                            <!-- Define the linear gradient -->
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff3399;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Use the linear gradient for the path fill -->
+                            <path
+                                d="M240 144A96 96 0 1 0 48 144a96 96 0 1 0 192 0zm44.4 32C269.9 240.1 212.5 288 144 288C64.5 288 0 223.5 0 144S64.5 0 144 0c68.5 0 125.9 47.9 140.4 112h71.8c8.8-9.8 21.6-16 35.8-16H496c26.5 0 48 21.5 48 48s-21.5 48-48 48H392c-14.2 0-27-6.2-35.8-16H284.4zM144 80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM400 240c13.3 0 24 10.7 24 24v8h96c13.3 0 24 10.7 24 24s-10.7 24-24 24H280c-13.3 0-24-10.7-24-24s10.7-24 24-24h96v-8c0-13.3 10.7-24 24-24zM288 464V352H512V464c0 26.5-21.5 48-48 48H336c-26.5 0-48-21.5-48-48zM48 320h80 16 32c26.5 0 48 21.5 48 48s-21.5 48-48 48H160c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V336c0-8.8 7.2-16 16-16zm128 64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160v32h16zM24 464H200c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24z"
+                                fill="url(#gradient)" />
+                        </svg>
+                        <h2 class="highlight">Chef-Esque</h2>
+
+                    </div>
+                    <div class="flip-card back-face">
+                        <div class="info">
+                            <div class="title">Chef-Esque</div>
+                            <p>For those luxurious times, when time is devoted solely for making food of excellence.</p>
+                            <a href="#">View Recipes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-content-right">
+                <h1 class="right-title">Pillars of Flavor Harmony</h1>
+                <div>
+                    <p class="right-text">Salt: <span class="highlight">Elevating Flavors</span> One Pinch at a Time.
+                    </p>
+                    <p class="right-text">Fat: <span class="highlight">Amplify Taste</span>, Savor the Indulgence.</p>
+                    <p class="right-text">Acid: <span class="highlight">The Balancing Act</span>, Zest for Harmony.</p>
+                    <p class="right-text">Heat: <span class="highlight">Culinary Craftsmanship</span> Through
+                        Temperature.</p>
+                </div>
+            </div>
+            <img src="img/steak.jpg" alt="Steak Image">
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="calorie-container">
+                <h1 class="highlight macro-title">Macro-Nutrients Calculator</h1>
+                <h2 class="highlight factor-title">Weight Goal Factor</h2>
+                <div class="factor-container">
+                    <div class="factor">
+                        <a href="#" class="link active">7</a>
+                        <a href="#" class="link">8</a>
+                        <a href="#" class="link">9</a>
+                        <a href="#" class="link">10</a>
+                        <a href="#" class="link">11</a>
+                        <a href="#" class="link">12</a>
+                        <a href="#" class="link">13</a>
+                        <a href="#" class="link">14</a>
+                        <a href="#" class="link">15</a>
+                        <a href="#" class="link">16</a>
+                        <a href="#" class="link">17</a>
+                        <a href="#" class="link">18</a>
+                        <a href="#" class="link">19</a>
+                        <a href="#" class="link">20</a>
+                        <a href="#" class="link">21</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="side-by-side">
+                    <div class="ontop">
+                        <form action="#">
+                            <div class="input-box">
+                                <input class="input" type="text" placeholder="Enter your weight (lbs)">
+                                <i class="fas fa-weight-hanging email-icon"></i>
+                                <i class="fas fa-exclamation-circle error-icon"></i>
+                                <i class="fas fa-check-circle passed-icon"></i>
+                                <input class="button" type="submit" value="Calculate">
+                            </div>
+                            <p class="text"></p>
+                        </form>
+
+                        <div class="result-container">
+                            <div class="box">
+
+                                <div class="name_job highlight">Results</div>
+                                <div class="result-section">
+                                    <h3>Calories Goal</h3>
+                                    <p id="calorie-text"></p>
+                                    <br>
+                                    <br>
+                                </div>
+
+                                <div class="result-section">
+                                    <h3>Protein goals</h3>
+                                    <p id="protein-text"></p>
+                                </div>
+                                <br>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legend-container">
+                        <div class="box">
+
+                            <div class="name_job highlight">Weight Goal Legend</div>
+                            <div class="legend-section">
+                                <h3>Extreme Weight Gain</h3>
+                                <p>19 - 21</p>
+                            </div>
+
+                            <div class="legend-section">
+                                <h3>Moderate Weight Gain</h3>
+                                <p>16 - 18</p>
+                            </div>
+
+                            <div class="legend-section">
+                                <h3>Maintenance Weight</h3>
+                                <p>13 - 15</p>
+                            </div>
+
+                            <div class="legend-section">
+                                <h3>Moderate Weight Loss</h3>
+                                <p>10 - 12</p>
+                            </div>
+
+                            <div class="legend-section">
+                                <h3>Extreme Weight Loss</h3>
+                                <p>7 - 9</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <!-- Recipe container with dynamic position -->
-    <div id="recipeContainer"></div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>

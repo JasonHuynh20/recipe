@@ -1,73 +1,152 @@
-/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-/* Style for the main background image */
-.main-background {
-    background-image: url('img/main.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+
+.wrapper {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    margin: 0 40px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+
+.wrapper .flip-card {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: black;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face .info {
     text-align: center;
-    padding: 100px 0;
-    position: relative; /* Add this line */
+    padding-bottom: 20px;
+    color: #fff;
 }
 
-/* CSS to style the fixed navigation bar */
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.back-face.info p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.back-face .info {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+
+.flip-card.front-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.flip-card.back-face .info a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 50px;
+}
+
+
+.dumbbell-icon {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 7rem;
+}
+
+.flip-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flip-card.back-face .info a:hover {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
 .fixed-nav {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px; /* Increase the top and right padding */
-    position: fixed; /* Change position to fixed */
+    padding: 25px 80px;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Add z-index to ensure it's above other content */
+    z-index: 100;
+    transition: background-color 0.3s;
 }
 
-/* CSS to style the recipe container */
-#recipeContainer {
-    margin-top: 100px; /* Add a margin to push it down */
-    padding: 20px;
+.scroll-active .fixed-nav {
+    background-color: black;
 }
 
-
-.nav-left h1 {
-    margin: 0;
-    color: white; /* Change the color to your desired text color */
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
-
-.nav-right a {
-    color: white; /* Change the color to your desired text color */
-    margin-left: 30px;
-    text-decoration: none;
-}
-
-
-/* Style for the recipe section */
-#recipePage {
-    background-color: #f5f5f5;
-}
-
-.recipe-name {
-    background-color: white;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-}
-
 
 nav {
     text-align: center;
@@ -82,36 +161,444 @@ nav a {
 }
 
 nav a:hover {
-    color: red; /* Change color on hover (e.g., orange) */
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
 }
 
+.nav-left h1 {
+    margin: 0;
+    color: white;
+}
 
-/* Recipe card styles */
-.recipe-card {
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    background: #282828;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    transition: transform 0s ease-in-out;
+}
+
+.card img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content-right {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.right-title {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 20%;
+}
+
+.right-text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 1%;
+}
+
+.highlight {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.highlight-title {
+    color: linear-gradient(45deg, #ff3399, #ff6600);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Recipe name styles */
-.recipe-name {
-    margin: 5px 0;
-    font-size: 18px;
-    font-weight: bold;
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff0066, #ff3300);
+}
+
+.main-text {
+    font-size: 4rem;
+    position: absolute;
+    color: white;
+}
+
+.gradient-text {
+    font-size: 4rem;
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ff3399, #ff6600);
+    background-size: 200% 200%;
+    /* Increase the size of the background */
+    animation: animateGradient 2s linear infinite;
+    /* Adjust the animation duration (2s) */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.fork {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transition: background 0.3s;
+    cursor: default;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.fork:hover {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     cursor: pointer;
 }
 
 
-/* Style for the main background image */
-.main-background {
-    background-image: url('img/main.jpg');
-    background-size: cover;
-    background-position: top; /* Change this line */
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+body,
+.factor-container,
+.factor,
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.factor-container {
+    padding: 20px;
+    border-radius: 8px;
+    column-gap: 12px;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    color: black;
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    /* Add transition for smooth movement */
+}
+
+.factor {
+    column-gap: 12px;
+}
+
+.link {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: black;
+    background: white;
+    cursor: pointer;
+    transform: translateY(15px);
+}
+
+.link.active {
+    color: #fff;
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    transform: translateY(15px);
+    cursor: pointer;
+}
+
+
+
+
+.calorie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+form {
+    max-width: 550px;
+    width: 100%;
+    background: black;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+form .input-box {
+    display: flex;
+    height: 55px;
+    align-items: center;
     position: relative;
 }
+
+.input-box input {
+    height: 100%;
+    outline: none;
+    border: 2px solid linear-gradient(45deg, #ff3399, #ff6600);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 45px;
+    transition: all 0.3s ease;
+}
+
+.input-box input.input {
+    width: 75%;
+    margin-right: 20px;
+}
+
+form.valid .input-box input.input {
+    border-color: #ff6600;
+}
+
+.input-box input.input:focus {
+    border-color: #ff6600;
+}
+
+form.error input.input {
+    border-color: #de0611;
+}
+
+.input-box input.button {
+    width: 25%;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+    border: none;
+    cursor: pointer;
+}
+
+.input-box input.button:hover {
+    background: linear-gradient(45deg, #ff3399, #ff6600);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input-box i.email-icon {
+    color: #bfbfbf;
+    left: 15px;
+    transition: all 0.3s ease;
+}
+
+form.valid i.email-icon {
+    color: #ff6600;
+}
+
+.input-box input.input:focus~i.email-icon {
+    color: #ff6600;
+}
+
+
+
+.input-box .error-icon,
+.input-box .passed-icon {
+    color: #de0611;
+    left: calc(75% - 60px);
+    display: none;
+}
+
+form.error .error-icon {
+    display: block;
+}
+
+.input-box .passed-icon {
+    color: #ff6600;
+}
+
+form.valid .passed-icon {
+    display: block;
+}
+
+form .text {
+    color: #de0611;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 -10px 2px;
+}
+
+form.valid .text {
+    color: #ff6600;
+}
+
+.macro-title {
+    margin-bottom: 100px;
+}
+
+.factor-title {
+    margin-bottom: 15px;
+    /* background: black; */
+}
+
+.legend-container{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  .legend-container .box{
+    min-width: 350px; /* Minimum width for the boxes */
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+
+  .box .legend-section{
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .box .name_job{
+    margin: 10px 0 3px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .legend-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .result-container{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  .result-container .box{
+    min-width: 350px; /* Minimum width for the boxes */
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+
+  .box .result-section{
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .result-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+  }
+
