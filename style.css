@@ -9,8 +9,6 @@
 
 
 :root {
-    /* --p-color: #ff3399;
-    --s-color: #ff6600; */
 
     /* --p-color: #0070f3;
     --s-color: #00ff00; */
@@ -322,7 +320,6 @@ h1.highlight-title {
     color: transparent;
     background-image: linear-gradient(45deg, var(--p-color), var(--s-color));
     background-size: 200% 200%;
-    animation: animateGradient 2s linear infinite;
     -webkit-background-clip: text;
     background-clip: text;
 }
