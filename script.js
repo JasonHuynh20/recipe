@@ -168,6 +168,12 @@ form.addEventListener("submit", (e) => {
     } else {
       console.log('One or both of the elements were not found.');
     }
+
+    // Check if the input number is less than 200
+    if (parseInt(eInput.value) < 200) {
+      form.classList.replace("valid", "error"); // Change class to "error"
+      text.innerText = "You skinny as hell. I'm mandating a bulk! NOW!";
+    }
   }
 });
 
