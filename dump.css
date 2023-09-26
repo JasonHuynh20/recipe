@@ -1,94 +1,55 @@
-/* Google Fonts - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* html {
+  --s: 150px;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  background:
+    linear-gradient(135deg,#0000 18.75%,black 0 31.25%,#0000 0),
+    repeating-linear-gradient(45deg,black -6.25% 6.25%,#282828 0 18.75%);
+  background-size: var(--s) var(--s);
+} */
+
+html {
+  --s: 100px;
+  --c1: #282828;
+  --c2: black;
+
+  --_g:
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+    var(--c1);
+  background-size: var(--s) var(--s);
 }
-section {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: #e3f2fd;
-}
-button {
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
-  padding: 14px 22px;
-  border: none;
-  background: #4070f4;
-  border-radius: 6px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #265df2;
-}
-button.show-modal,
-.modal-box {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-section.active .show-modal {
-  display: none;
-}
-.overlay {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  pointer-events: none;
-}
-section.active .overlay {
-  opacity: 1;
-  pointer-events: auto;
-}
-.modal-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 380px;
-  width: 100%;
-  padding: 30px 20px;
-  border-radius: 24px;
-  background-color: #fff;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transform: translate(-50%, -50%) scale(1.2);
-}
-section.active .modal-box {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-}
-.modal-box i {
-  font-size: 70px;
-  color: #4070f4;
-}
-.modal-box h2 {
-  margin-top: 20px;
-  font-size: 25px;
-  font-weight: 500;
-  color: #333;
-}
-.modal-box h3 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-}
-.modal-box .buttons {
-  margin-top: 25px;
-}
-.modal-box button {
-  font-size: 14px;
-  padding: 6px 12px;
-  margin: 0 10px;
-}
+
+/* html {
+  --s: 82px;
+  --c1: black;
+  --c2: #5a5a5a;
+  --c3: #282828;
+
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
+} */
+
+
+/* html {
+  --s: 200px;
+  --c: #282828;
+
+  --_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
+  background:
+    linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+    linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+    linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),
+    linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0),
+    black;
+  background-size: var(--s) var(--s);
+} */
