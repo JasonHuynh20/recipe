@@ -63,25 +63,29 @@ closeBtn.addEventListener("click", () => {
   section.classList.remove("active");
 });
 
-
-
-
-
 // Get references to the elements
 const steakElement = document.getElementById('steak');
+const steakPElement = document.getElementById('steakP');
 
-// Set the initial transform values
-let steakElementTransform = 360;
+// Set the initial transform values and speed factors
+let steakElementTransform = 510;
+let steakPElementTransform = 650;
+
+// Speed factors for parallax effects
+const steakSpeedFactor = 0.3;   // Adjust as needed
+const steakPSpeedFactor = 0.4;  // Adjust as needed
 
 // Function to update the parallax effect
 function updateParallax() {
   const scrollValue = window.scrollY;
 
-  // Adjust the translation values based on your desired effect
-  steakElementTransform = 360 - scrollValue * 0.2; // Adjust the factor as needed
+  // Adjust the translation values based on your desired effects and speed factors
+  steakElementTransform = 510 - scrollValue * steakSpeedFactor;
+  steakPElementTransform = 650 - scrollValue * steakPSpeedFactor;
 
-  // Apply the transformations
+  // Apply the transformations to both elements
   steakElement.style.transform = `translateY(${steakElementTransform}px)`;
+  steakPElement.style.transform = `translateY(${steakPElementTransform}px)`;
 }
 
 // Attach the updateParallax function to the scroll event
@@ -89,6 +93,7 @@ window.addEventListener('scroll', updateParallax);
 
 // Call updateParallax initially to set the initial positions
 updateParallax();
+
 
 
 document.addEventListener("scroll", function () {
