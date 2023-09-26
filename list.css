@@ -252,7 +252,7 @@ h1.highlight-title {
 
 
 .flip-card.back-face .info a:hover {
-    background: linear-gradient(45deg, #FF4500, #ffa047);
+    background: linear-gradient(45deg, #ff1b00, #ffa047);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

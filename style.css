@@ -102,11 +102,15 @@ body {
 
 
 .flip-card.back-face .info a {
-    color: white;
+    /* color: white; */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s;
     margin-top: 50px;
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -126,7 +130,7 @@ body {
 }
 
 .flip-card.back-face .info a:hover {
-    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background: linear-gradient(45deg, #ff1b00, #ffa047);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
