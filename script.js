@@ -172,7 +172,7 @@ form.addEventListener("submit", (e) => {
     // Check if the input number is less than 200
     if (parseInt(eInput.value) < 200) {
       form.classList.replace("valid", "error"); // Change class to "error"
-      text.innerText = "You skinny as hell. I'm mandating a bulk! NOW!";
+      text.innerText = "Goddammnn, you skinny as hell. I am mandating a bulk! (Macros were still calculated)";
     }
   }
 });
