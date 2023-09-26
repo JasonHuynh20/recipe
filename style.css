@@ -162,8 +162,9 @@ body {
 .flip-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    overflow-x: auto;
 }
 
 .flip-card.back-face .info a:hover {
@@ -789,4 +790,4 @@ section.active .modal-box {
     font-size: 14px;
     padding: 6px 12px;
     margin: 0 10px;
-}
+}  
