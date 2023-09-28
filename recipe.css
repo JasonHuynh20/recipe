@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+:root {
+    /* --p-color: #ff3399;
+    --s-color: #ff6600; */
+
+    /* --p-color: #0070f3;
+    --s-color: #00ff00; */
+
+    --p-color: #FF4500;
+    --s-color: #FFD700;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 0;
+    /* background: #282828; */
+    overflow-x: hidden;
+    --s: 100px;
+    --c1: #282828;
+    --c2: black;
+
+    --_g:
+        var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+        var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+    background:
+        radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+        radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+        var(--c1);
+    background-size: var(--s) var(--s);
+}
+
+.fixed-nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.scroll-active .fixed-nav {
+    background-color: black;
+}
+
+.nav-icon {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    font-size: 2.5rem;
+    padding-left: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a.current {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.nav-left h1 {
+    margin: 0;
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+
+h1.highlight-title {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+}

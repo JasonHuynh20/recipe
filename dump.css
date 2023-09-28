@@ -1,55 +1,66 @@
-/* html {
-  --s: 150px;
-
-  background:
-    linear-gradient(135deg,#0000 18.75%,black 0 31.25%,#0000 0),
-    repeating-linear-gradient(45deg,black -6.25% 6.25%,#282828 0 18.75%);
-  background-size: var(--s) var(--s);
-} */
-
-html {
-  --s: 100px;
-  --c1: #282828;
-  --c2: black;
-
-  --_g:
-     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
-  background:
-    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-    var(--c1);
-  background-size: var(--s) var(--s);
+.section1,
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-/* html {
-  --s: 82px;
-  --c1: black;
-  --c2: #5a5a5a;
-  --c3: #282828;
+.section2 {
+  background: rgb(68, 35, 19);
+}
 
-  --_g: var(--c3) 0 120deg,#0000 0;
-  background:
-    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
-    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
-    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
-    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
-    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
-                          var(--c1) 0 calc(500%/6),var(--c2) 0);
-  background-size: calc(1.732*var(--s)) var(--s);
-} */
+.text {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 15vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
 
 
-/* html {
-  --s: 200px;
-  --c: #282828;
+html {
+  height: 100vh;
+  overflow: hidden;
+}
 
-  --_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
-  background:
-    linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
-    linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
-    linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),
-    linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0),
-    black;
-  background-size: var(--s) var(--s);
-} */
+body {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section1,
+.section2 {
+  transform-style: preserve-3d;
+}
+
+
+.section1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("outer-layer-blur.png") top center;
+  background-size: cover;
+}
+
+.section1 .text {
+  top: 10%;
+  transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
+}
+
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("base.png") top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(2px);
+}

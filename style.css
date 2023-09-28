@@ -68,6 +68,7 @@ body {
     margin: 0 40px;
     transform-style: preserve-3d;
     perspective: 1000px;
+    overflow: hidden;
 }
 
 
@@ -174,8 +175,6 @@ body {
     color: transparent;
 }
 
-
-
 .fixed-nav {
     background-color: transparent;
     display: flex;
@@ -214,6 +213,8 @@ nav a {
     margin: 0 10px;
     font-weight: bold;
     transition: color 0.3s;
+    white-space: nowrap;
+
 }
 
 nav a:hover {
@@ -252,7 +253,6 @@ nav a.current {
 .card {
     width: 100vw;
     height: 100vh;
-    /* background: #282828; */
     color: black;
     display: flex;
     justify-content: center;
@@ -790,4 +790,22 @@ section.active .modal-box {
     font-size: 14px;
     padding: 6px 12px;
     margin: 0 10px;
-}  
+}
+
+
+
+
+/* Add this CSS to your existing styles */
+.steak,
+.steakP {
+  transition: transform 0.3s; /* Add smooth transition for the effect */
+}
+
+.steak {
+  transform: translateY(0); /* Initial position */
+}
+
+.steakP {
+  transform: translateY(0); /* Initial position */
+}
+
