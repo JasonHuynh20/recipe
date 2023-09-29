@@ -302,20 +302,24 @@ nav a.current {
     position: absolute;
     z-index: 2;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
     width: 33.33%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 
 }
+
+
 
 .right-title {
     font-size: 2.5rem;
     color: white;
     text-align: center;
     padding: 20%;
+    padding-top: 5%;
 }
 
 .right-text {
@@ -324,6 +328,15 @@ nav a.current {
     text-align: center;
     padding: 1%;
 }
+
+
+.right-title {
+    font-size: 2.5vw; /* Set a font size relative to viewport width */
+  }
+
+  .right-text {
+    font-size: 1.5vw; /* Set a font size relative to viewport width */
+  }
 
 .highlight {
     background: linear-gradient(45deg, var(--p-color), var(--s-color));
