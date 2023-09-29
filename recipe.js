@@ -6,45 +6,62 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the "title" query parameter value from the URL
     const title = queryParams.get("title");
 
-    // Fetch the recipeSource.json file
-    fetch('/recipeSource.json')
-        .then(response => response.json())
-        .then(data => {
-            // Find the recipe with the matching "Title" query parameter
-            const recipe = data.recipes.find(recipe => recipe.Title.toLowerCase() === title.toLowerCase());
+     // Fetch the recipeSource.json file
+     fetch('/recipeSource.json')
+     .then(response => response.json())
+     .then(data => {
+         // Find the recipe with the matching "Title" query parameter
+         const recipe = data.recipes.find(recipe => recipe.Title.toLowerCase() === title.toLowerCase());
 
-            if (recipe) {
-                // Populate the HTML elements with recipe data
-                document.getElementById("recipeTitle").textContent = recipe.Title;
-                document.querySelector(".basics").innerHTML = `
-                     <p>Total Time: ${recipe.TotalTime}</p>
-                     <p>Serving Size: ${recipe.ServingSize}</p>
-                     <p>Calories: ${recipe.Calories}</p>
-                     <p>Protein: ${recipe.Protein}</p>
-                     <p>Carbs: ${recipe.Carbs}</p>
-                 `;
-                document.querySelector(".ingredients").innerHTML = `
-    <h3 class="ingredients-title">Ingredients</h3>
-    <ul>
-        ${recipe.Ingredients.map(ingredient => `<li>${ingredient.IngredientsList.join(', ')}</li>`).join('')}
-    </ul>
-`;
+         if (recipe) {
+             // Populate the HTML elements with recipe data
+             document.getElementById("recipeTitle").textContent = recipe.Title;
 
-                document.querySelector(".instructions").innerHTML = `
-                     <h3 class="instructions-title">Instructions</h3>
-                     <ol>
-                         ${recipe.Instructions.map(instruction => `<li>${instruction}</li>`).join('')}
-                     </ol>
-                 `;
-            } else {
-                console.log("No matching recipe found.");
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
-        });
+             // Create and insert an image element or icon element
+             const imgContainer = document.querySelector(".basic-container");
+             let imageElement;
 
+             if (recipe.Img && recipe.Img.trim() !== '') {
+                 // Create an <img> element with the specified src attribute
+                 imageElement = document.createElement('img');
+                 imageElement.src = recipe.Img;
+                 imageElement.className = 'recipe-img';
+             } else {
+                 // Create an <i> element with the specified class
+                 imageElement = document.createElement('i');
+                 imageElement.className = 'fa-solid fa-utensils recipe-icon';
+             }
 
+             // Insert the created element into the container
+             imgContainer.insertBefore(imageElement, imgContainer.firstChild);
+
+             document.querySelector(".basics").innerHTML = `
+                <p><span class="title">Total Time:</span> ${recipe.TotalTime}</p>
+                <p><span class="title">Serving Size:</span> ${recipe.ServingSize}</p>
+                <p><span class="title">Calories:</span> ${recipe.Calories}</p>
+                <p><span class="title">Protein:</span> ${recipe.Protein}</p>
+                <p><span class="title">Carbs:</span> ${recipe.Carbs}</p>
+            `;
+
+             document.querySelector(".ingredients").innerHTML = `
+                 <h3 class="ingredients-title">Ingredients</h3>
+                 <ul>
+                     ${recipe.Ingredients.map(ingredient => `<li>${ingredient.IngredientsList.join(', ')}</li>`).join('')}
+                 </ul>
+             `;
+             document.querySelector(".instructions").innerHTML = `
+                 <h3 class="instructions-title">Instructions</h3>
+                 <ol>
+                     ${recipe.Instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+                 </ol>
+             `;
+         } else {
+             console.log("No matching recipe found.");
+         }
+     })
+     .catch(error => {
+         console.error("Error fetching data:", error);
+     });
     document.getElementById("allNav").addEventListener("click", function () {
         window.location.href = `index.html`;
     });
