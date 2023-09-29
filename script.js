@@ -136,46 +136,74 @@ const form = document.querySelector("form"),
   eInput = form.querySelector(".input"),
   text = form.querySelector(".text");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); // Preventing form from submitting
-  let numberPattern = /^\d+$/; // Regex pattern to validate if the input is a number
-  form.classList.add("error");
-  form.classList.remove("valid");
-  if (eInput.value == "") {
-    text.innerText = "Number can't be blank";
-  } else if (!eInput.value.match(numberPattern)) {
-    text.innerText = "Please enter a valid number";
-  } else {
-    form.classList.replace("error", "valid"); // Replacing error class with valid class
-    text.innerText = "Calculated";
-
-    const activeElement = document.querySelector(".active");
-    const eInput = document.querySelector("input.input"); // Assuming this is your input element
-
-    // Your calculations
-    const calories = activeElement ? (parseInt(activeElement.textContent) * parseInt(eInput.value)) : 0; // Parse the text content to integers
-    const protein = parseInt(eInput.value);
-
-    // Select the <p> tags within the first result-section
-    const calorieText = document.getElementById('calorie-text');
-    const proteinText = document.getElementById('protein-text');
-
-    // Check if the elements were found
-    if (calorieText && proteinText) {
-      // Update the text content of the <p> tags with the calculated values
-      calorieText.textContent = `${calories} Calories Per Day`;
-      proteinText.textContent = `${protein} Grams of Protein Per Day`;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Preventing form from submitting
+    let numberPattern = /^\d+$/; // Regex pattern to validate if the input is a number
+    form.classList.add("error");
+    form.classList.remove("valid");
+    if (eInput.value == "") {
+      text.innerText = "Number can't be blank";
+    } else if (!eInput.value.match(numberPattern)) {
+      text.innerText = "Please enter a valid number";
     } else {
-      console.log('One or both of the elements were not found.');
-    }
+      form.classList.replace("error", "valid"); // Replacing error class with valid class
+      text.innerText = "Calculated";
 
-    // Check if the input number is less than 200
-    if (parseInt(eInput.value) < 200) {
-      form.classList.replace("valid", "error"); // Change class to "error"
-      text.innerText = "Goddammnn, you skinny as hell. I am mandating a bulk! (Macros were still calculated)";
+      const activeElement = document.querySelector(".active");
+      const eInput = document.querySelector("input.input"); // Assuming this is your input element
+
+      // Your calculations
+      const calories = activeElement ? (parseInt(activeElement.textContent) * parseInt(eInput.value)) : 0; // Parse the text content to integers
+      const protein = parseInt(eInput.value);
+
+      // Define macronutrient ratios based on weight gain or loss goal
+      let carbRatio, fatRatio;
+
+      if (parseInt(eInput.value) >= 19) {
+        carbRatio = 0.6; // 60% of total calories
+        fatRatio = 0.3; // 30% of total calories
+      } else if (parseInt(eInput.value) >= 16) {
+        carbRatio = 0.55; // 55% of total calories
+        fatRatio = 0.3; // 30% of total calories
+      } else if (parseInt(eInput.value) >= 13) {
+        carbRatio = 0.5; // 50% of total calories
+        fatRatio = 0.3; // 30% of total calories
+      } else if (parseInt(eInput.value) >= 10) {
+        carbRatio = 0.45; // 45% of total calories
+        fatRatio = 0.3; // 30% of total calories
+      } else {
+        carbRatio = 0.4; // 40% of total calories
+        fatRatio = 0.3; // 30% of total calories
+      }
+
+      // Calculate carbohydrates and fats based on the calculated ratios
+      const carbs = Math.round((calories * carbRatio) / 4); // Each gram of carbs is 4 calories
+      const fats = Math.round((calories * fatRatio) / 9); // Each gram of fats is 9 calories
+
+      // Select the <p> tags within the result-sections
+      const calorieText = document.getElementById('calorie-text');
+      const proteinText = document.getElementById('protein-text');
+      const carbText = document.getElementById('carbs-text');
+      const fatText = document.getElementById('fat-text');
+
+      // Check if the elements were found
+      if (calorieText && proteinText && carbText && fatText) {
+        // Update the text content of the <p> tags with the calculated values
+        calorieText.textContent = `${calories} Calories`;
+        proteinText.textContent = `${protein} Grams`;
+        carbText.textContent = `${carbs} Grams`;
+        fatText.textContent = `${fats} Grams`;
+      } else {
+        console.log('One or more of the elements were not found.');
+      }
+
+      // Check if the input number is less than 200
+      if (parseInt(eInput.value) < 200) {
+        form.classList.replace("valid", "error"); // Change class to "error"
+        text.innerText = "Goddammnn, you skinny as hell. I am mandating a bulk! (Macros were still calculated)";
+      }
     }
-  }
-});
+  });
 
 
 // Selecting DOM elements
