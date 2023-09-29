@@ -10,6 +10,8 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    align-items: center;
+    padding-top: 80px;
 }
 
 
@@ -145,3 +147,93 @@ h1.highlight-title {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, var(--p-color), var(--s-color));
 }
+
+
+.recipe-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.recipe-title {
+    font-size: 24px;
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.basics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.basics .ingredient-info,
+.basics .instruction-info {
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.recipe-info {
+    color: #cccccc;
+}
+
+.recipe-ingredients, .recipe-instructions {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.recipe-data {
+    color: white;
+}
+
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ingredients {
+    flex: 1;
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.instructions {
+    flex: 2;
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.ingredients-title,
+.instructions-title {
+    background: linear-gradient(45deg, var(--p-color), var(--s-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+

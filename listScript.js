@@ -81,7 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Create the "View Recipe" link
                 const viewRecipeLink = document.createElement('a');
-                viewRecipeLink.href = '#';
+                viewRecipeLink.href = `recipe.html?title=${recipe.Title}`;
+                viewRecipeLink.classList.add("view-recipe");
                 viewRecipeLink.textContent = 'View Recipe';
 
                 // Append the title, recipe details, and link to the info div
@@ -139,6 +140,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event listener for "Chef-Esque" link
     document.getElementById("chefNav").addEventListener("click", function () {
         window.location.href = `list.html?type=chef`;
+    });
+
+    // Event listener for "View Recipe" links
+    document.querySelectorAll(".view-recipe").forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = this.getAttribute("href"); // Navigate to the recipe's route
+        });
     });
 
 
