@@ -1,649 +1,150 @@
 {
   "recipes": [
     {
-      "Title": "Spaghetti Carbonara",
-      "TotalTime": "20 minutes",
-      "ServingSize": "4 servings",
-      "Type": "Big",
-      "Calories": 450,
-      "Protein": "15g",
-      "Carbs": "40g",
-      "Ingredients": [
-        {
-          "FoodItem": "Spaghetti",
-          "IngredientsList": ["8 ounces spaghetti"]
-        },
-        {
-          "FoodItem": "Bacon",
-          "IngredientsList": ["4 slices bacon, chopped"]
-        },
-        {
-          "FoodItem": "Eggs",
-          "IngredientsList": ["2 large eggs"]
-        },
-        {
-          "FoodItem": "Parmesan Cheese",
-          "IngredientsList": ["1 cup grated Parmesan cheese"]
-        },
-        {
-          "FoodItem": "Black Pepper",
-          "IngredientsList": ["Freshly ground black pepper to taste"]
-        }
-      ],
-      "Instructions": [
-        "Cook spaghetti according to package instructions. Drain and set aside.",
-        "In a skillet, cook chopped bacon until crispy. Remove from heat and drain on paper towels.",
-        "In a bowl, whisk together eggs and grated Parmesan cheese.",
-        "Toss the cooked spaghetti with the egg and cheese mixture until well coated. The heat from the spaghetti will cook the eggs and create a creamy sauce.",
-        "Stir in the crispy bacon and season with freshly ground black pepper.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Spaghetti Carbonara",
-      "TotalTime": "20 minutes",
-      "ServingSize": "4 servings",
-      "Type": "cozy",
-      "Calories": 450,
-      "Protein": "15g",
-      "Carbs": "40g",
-      "Ingredients": [
-        {
-          "FoodItem": "Spaghetti",
-          "IngredientsList": ["8 ounces spaghetti"]
-        },
-        {
-          "FoodItem": "Bacon",
-          "IngredientsList": ["4 slices bacon, chopped"]
-        },
-        {
-          "FoodItem": "Eggs",
-          "IngredientsList": ["2 large eggs"]
-        },
-        {
-          "FoodItem": "Parmesan Cheese",
-          "IngredientsList": ["1 cup grated Parmesan cheese"]
-        },
-        {
-          "FoodItem": "Black Pepper",
-          "IngredientsList": ["Freshly ground black pepper to taste"]
-        }
-      ],
-      "Instructions": [
-        "Cook spaghetti according to package instructions. Drain and set aside.",
-        "In a skillet, cook chopped bacon until crispy. Remove from heat and drain on paper towels.",
-        "In a bowl, whisk together eggs and grated Parmesan cheese.",
-        "Toss the cooked spaghetti with the egg and cheese mixture until well coated. The heat from the spaghetti will cook the eggs and create a creamy sauce.",
-        "Stir in the crispy bacon and season with freshly ground black pepper.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Creamy Tomato Soup",
+      "Title": "Sriracha Peanut Chicken Meal Prep",
       "TotalTime": "30 minutes",
-      "ServingSize": "6 servings",
-      "Type": "cozy",
-      "Calories": 320,
-      "Protein": "8g",
-      "Carbs": "22g",
-      "Ingredients": [
-        {
-          "FoodItem": "Tomatoes",
-          "IngredientsList": ["4 cups canned tomatoes"]
-        },
-        {
-          "FoodItem": "Heavy Cream",
-          "IngredientsList": ["1 cup heavy cream"]
-        },
-        {
-          "FoodItem": "Butter",
-          "IngredientsList": ["4 tablespoons butter"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, chopped"]
-        },
-        {
-          "FoodItem": "Garlic",
-          "IngredientsList": ["2 cloves garlic, minced"]
-        },
-        {
-          "FoodItem": "Basil",
-          "IngredientsList": ["1 teaspoon dried basil"]
-        },
-        {
-          "FoodItem": "Salt",
-          "IngredientsList": ["Salt to taste"]
-        },
-        {
-          "FoodItem": "Pepper",
-          "IngredientsList": ["Black pepper to taste"]
-        }
-      ],
-      "Instructions": [
-        "In a large pot, melt the butter over medium heat. Add the chopped onion and minced garlic. Cook until softened.",
-        "Add the canned tomatoes, including the juice, and dried basil. Simmer for 15 minutes.",
-        "Use an immersion blender to puree the soup until smooth. If you don't have an immersion blender, carefully transfer the soup to a regular blender.",
-        "Return the pureed soup to the pot and stir in the heavy cream. Heat through but do not boil.",
-        "Season with salt and black pepper to taste.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Chicken Pot Pie",
-      "TotalTime": "45 minutes",
-      "ServingSize": "4 servings",
-      "Type": "cozy",
-      "Calories": 550,
-      "Protein": "22g",
-      "Carbs": "45g",
-      "Ingredients": [
-        {
-          "FoodItem": "Chicken",
-          "IngredientsList": ["2 cups cooked chicken, diced"]
-        },
-        {
-          "FoodItem": "Mixed Vegetables",
-          "IngredientsList": ["2 cups mixed vegetables (peas, carrots, corn, etc.)"]
-        },
-        {
-          "FoodItem": "Butter",
-          "IngredientsList": ["1/3 cup butter"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1/3 cup chopped onion"]
-        },
-        {
-          "FoodItem": "Flour",
-          "IngredientsList": ["1/3 cup all-purpose flour"]
-        },
-        {
-          "FoodItem": "Salt",
-          "IngredientsList": ["1/2 teaspoon salt"]
-        },
-        {
-          "FoodItem": "Pepper",
-          "IngredientsList": ["1/4 teaspoon black pepper"]
-        },
-        {
-          "FoodItem": "Puff Pastry",
-          "IngredientsList": ["1 sheet puff pastry"]
-        }
-      ],
-      "Instructions": [
-        "Preheat oven to 425°F (220°C).",
-        "In a large saucepan, melt the butter over medium heat. Add the chopped onion and cook until translucent.",
-        "Stir in the flour, salt, and black pepper to make a roux.",
-        "Gradually whisk in chicken broth and milk until the mixture thickens and becomes smooth.",
-        "Add the diced chicken and mixed vegetables. Cook until heated through.",
-        "Pour the mixture into a pie dish.",
-        "Roll out the puff pastry sheet and place it over the pie dish, trimming any excess pastry.",
-        "Cut a few slits in the pastry to vent steam.",
-        "Bake for about 30 minutes or until the pastry is golden brown and the filling is bubbling.",
-        "Let it cool for a few minutes before serving."
-      ]
-    },
-    {
-      "Title": "Homemade Mac and Cheese",
-      "TotalTime": "35 minutes",
-      "ServingSize": "6 servings",
-      "Img": "img/mac.jpg",
-      "Type": "cozy",
-      "Calories": 380,
-      "Protein": "12g",
-      "Carbs": "42g",
-      "Ingredients": [
-        {
-          "FoodItem": "Elbow Macaroni",
-          "IngredientsList": ["2 cups elbow macaroni"]
-        },
-        {
-          "FoodItem": "Butter",
-          "IngredientsList": ["1/4 cup butter"]
-        },
-        {
-          "FoodItem": "All-Purpose Flour",
-          "IngredientsList": ["1/4 cup all-purpose flour"]
-        },
-        {
-          "FoodItem": "Milk",
-          "IngredientsList": ["2 cups milk"]
-        },
-        {
-          "FoodItem": "Cheddar Cheese",
-          "IngredientsList": ["2 cups shredded cheddar cheese"]
-        },
-        {
-          "FoodItem": "Salt",
-          "IngredientsList": ["1/2 teaspoon salt"]
-        },
-        {
-          "FoodItem": "Pepper",
-          "IngredientsList": ["1/4 teaspoon black pepper"]
-        }
-      ],
-      "Instructions": [
-        "Cook elbow macaroni according to package instructions. Drain and set aside.",
-        "In a large saucepan, melt the butter over medium heat. Stir in the flour until well combined.",
-        "Gradually whisk in the milk and cook until the mixture thickens.",
-        "Stir in the shredded cheddar cheese until smooth and creamy.",
-        "Season with salt and black pepper.",
-        "Add the cooked macaroni to the cheese sauce and stir to combine.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Beef Stew",
-      "TotalTime": "2 hours",
-      "ServingSize": "6 servings",
-      "Type": "cozy",
-      "Calories": 380,
-      "Protein": "20g",
-      "Carbs": "30g",
-      "Ingredients": [
-        {
-          "FoodItem": "Beef Stew Meat",
-          "IngredientsList": ["2 pounds beef stew meat"]
-        },
-        {
-          "FoodItem": "Potatoes",
-          "IngredientsList": ["4 potatoes, peeled and diced"]
-        },
-        {
-          "FoodItem": "Carrots",
-          "IngredientsList": ["4 carrots, sliced"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, chopped"]
-        },
-        {
-          "FoodItem": "Beef Broth",
-          "IngredientsList": ["4 cups beef broth"]
-        },
-        {
-          "FoodItem": "Flour",
-          "IngredientsList": ["1/4 cup all-purpose flour"]
-        },
-        {
-          "FoodItem": "Salt",
-          "IngredientsList": ["1 teaspoon salt"]
-        },
-        {
-          "FoodItem": "Pepper",
-          "IngredientsList": ["1/2 teaspoon black pepper"]
-        },
-        {
-          "FoodItem": "Thyme",
-          "IngredientsList": ["1 teaspoon dried thyme"]
-        }
-      ],
-      "Instructions": [
-        "In a large pot, brown the beef stew meat over medium-high heat. Remove the meat and set aside.",
-        "In the same pot, add chopped onion and cook until softened.",
-        "Sprinkle flour over the onions and stir to coat.",
-        "Gradually add beef broth while stirring constantly until the mixture thickens.",
-        "Return the browned beef to the pot and add potatoes, carrots, salt, black pepper, and dried thyme.",
-        "Simmer for about 1.5 to 2 hours until the beef and vegetables are tender.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Chicken and Dumplings",
-      "TotalTime": "1.5 hours",
-      "ServingSize": "4 servings",
-      "Type": "cozy",
-      "Calories": 420,
-      "Protein": "16g",
-      "Carbs": "50g",
-      "Ingredients": [
-        {
-          "FoodItem": "Chicken Thighs",
-          "IngredientsList": ["4 bone-in, skin-on chicken thighs"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, chopped"]
-        },
-        {
-          "FoodItem": "Carrots",
-          "IngredientsList": ["2 carrots, sliced"]
-        },
-        {
-          "FoodItem": "Celery",
-          "IngredientsList": ["2 celery stalks, sliced"]
-        },
-        {
-          "FoodItem": "Chicken Broth",
-          "IngredientsList": ["4 cups chicken broth"]
-        },
-        {
-          "FoodItem": "Flour",
-          "IngredientsList": ["1/4 cup all-purpose flour"]
-        },
-        {
-          "FoodItem": "Baking Powder",
-          "IngredientsList": ["2 teaspoons baking powder"]
-        },
-        {
-          "FoodItem": "Milk",
-          "IngredientsList": ["1 cup milk"]
-        },
-        {
-          "FoodItem": "Salt",
-          "IngredientsList": ["1 teaspoon salt"]
-        },
-        {
-          "FoodItem": "Pepper",
-          "IngredientsList": ["1/2 teaspoon black pepper"]
-        }
-      ],
-      "Instructions": [
-        "In a large pot, brown the chicken thighs over medium-high heat. Remove the chicken and set aside.",
-        "In the same pot, add chopped onion, carrots, and celery. Cook until softened.",
-        "Sprinkle flour over the vegetables and stir to coat.",
-        "Gradually add chicken broth while stirring constantly until the mixture thickens.",
-        "Return the browned chicken to the pot and simmer for about 30 minutes until the chicken is cooked through.",
-        "In a bowl, mix flour, baking powder, milk, salt, and black pepper to form dumpling dough.",
-        "Drop spoonfuls of dumpling dough into the simmering chicken and vegetable mixture.",
-        "Cover and simmer for an additional 20-30 minutes until the dumplings are cooked and the stew thickens.",
-        "Serve hot."
-      ]
-    },
-    {
-      "Title": "Caesar Salad",
-      "TotalTime": "15 minutes",
-      "ServingSize": "4 servings",
+      "ServingSize": "5 servings",
+      "Img": "/img/siracha-chicken.jpg",
       "Type": "Shrink",
-      "Calories": 250,
-      "Protein": "6g",
-      "Carbs": "15g",
-      "Ingredients": [
-        {
-          "FoodItem": "Romaine Lettuce",
-          "IngredientsList": ["1 head romaine lettuce, chopped"]
-        },
-        {
-          "FoodItem": "Croutons",
-          "IngredientsList": ["1 cup croutons"]
-        },
-        {
-          "FoodItem": "Parmesan Cheese",
-          "IngredientsList": ["1/2 cup grated Parmesan cheese"]
-        },
-        {
-          "FoodItem": "Caesar Dressing",
-          "IngredientsList": ["1/4 cup Caesar dressing"]
-        },
-        {
-          "FoodItem": "Lemon Juice",
-          "IngredientsList": ["1 tablespoon lemon juice"]
-        }
-      ],
+      "Calories": 584,
+      "Protein": "45g",
+      "Carbs": "54g",
+      "Ingredients": {
+        "SAUCE": [
+          "¼ cup (60 g) soy sauce",
+          "2 tbsp (28 g) peanut butter",
+          "1 tbsp (15 g) rice vinegar",
+          "2 tbsp (42 g) honey",
+          "2 cloves (15 g) minced garlic",
+          "1 tbsp (15 g) sriracha",
+          "2 tsp (10 g) sesame oil"
+        ],
+        "CHICKEN": [
+          "2 lbs (908 g) boneless skinless chicken thighs",
+          "1 tbsp (14 g) mayonnaise",
+          "1 tbsp (15 g) sriracha",
+          "1 tbsp (15 g) rice vinegar",
+          "2 tsp (6 g) onion powder",
+          "2 tsp (6 g) garlic powder",
+          "1 tsp (6 g) salt"
+        ],
+        "RICE BOWLS": [
+          "3 medium (100 g) carrots",
+          "½ lb (227 g) broccoli",
+          "1 small (150 g) onion",
+          "3 cups (450 g) cooked rice",
+          "1 tbsp (15 g) oil",
+          "2 (15 g) green onions optional",
+          "¼ cup (30 g) crushed peanuts optional"
+        ]
+      },
       "Instructions": [
-        "In a large salad bowl, combine chopped romaine lettuce and croutons.",
-        "Sprinkle grated Parmesan cheese over the lettuce and croutons.",
-        "Drizzle Caesar dressing and lemon juice over the salad.",
-        "Toss everything together until well coated.",
-        "Serve immediately as a side dish or with grilled chicken for a main course."
+        {
+          "Section": "For the rice",
+          "Steps": [
+            "Day-old rice is best for these rice bowl-style recipes as it has had time to dry out a bit. Frozen rice is also a good choice. If you don't want to wait for day-old rice, fresh rice works well too.",
+            "Prepare enough rice to yield 3 cups of cooked rice. 1 cup of dry rice will make 2-3 cups of cooked rice depending on the kind of rice you are using."
+          ]
+        },
+        {
+          "Section": "For the chicken",
+          "Steps": [
+            "Preheat your oven to 425°F.",
+            "In a bowl, add the mayo, sriracha, rice vinegar, garlic powder, onion powder, and salt. Mix together to combine.",
+            "Add the chicken thighs to the bowl and toss to coat. Marinating this for an hour or two can help make the chicken more flavorful, but it's also fine to cook it right away.",
+            "Line a sheet pan with foil or parchment and lay the chicken thighs on top with the smooth side facing down. Roast for 10 minutes, then turn the oven to broil and broil for about 5 minutes to brown the chicken. Be careful not to burn the chicken as the broiler is very hot.",
+            "Allow the chicken to rest for a couple of minutes, then dice it into bite-sized pieces."
+          ]
+        },
+        {
+          "Section": "For the sauce",
+          "Steps": [
+            "Mix all of the sauce ingredients in a bowl and stir vigorously."
+          ]
+        },
+        {
+          "Section": "For the rice bowls",
+          "Steps": [
+            "Cut your onion into thin slices.",
+            "Chop the broccoli into small, bite-sized florets.",
+            "Shred the carrots into ribbons using a vegetable peeler.",
+            "Chop the green onion tops into thin slices.",
+            "In a large skillet over medium-high heat, add the broccoli with about ¼ cup of water. This will help it steam and cook to soften. By the time the water boils off, they will be close to being ready, and you can cook the remaining vegetables.",
+            "Make room in the center of the skillet and add 1 tbsp of oil. Dump the onions into the center and cook for about 1-2 minutes so they get some color. Add in the carrots shortly after and cook the vegetables together for another minute or two.",
+            "Add your cooked rice to the skillet and pour the sauce over the top of the rice and vegetables. Stir to combine and coat the contents of the pan.",
+            "Add in the chicken and mix. Taste test and adjust the seasonings with salt and pepper as needed. If you want more spice, use more sriracha. Any of the flavors can be adjusted to meet your preferences."
+          ]
+        },
+        {
+          "Section": "Plating",
+          "Steps": [
+            "This recipe makes 5 servings. Divide the contents of the skillet evenly into your 5 containers.",
+            "Top each dish with green onions and crushed peanuts."
+          ]
+        }
       ]
     },
     {
-      "Title": "Vegetable Stir-Fry",
-      "TotalTime": "25 minutes",
-      "ServingSize": "4 servings",
-      "Type": "Chef",
-      "Calories": 180,
-      "Protein": "5g",
-      "Carbs": "25g",
-      "Ingredients": [
-        {
-          "FoodItem": "Mixed Vegetables",
-          "IngredientsList": ["2 cups mixed vegetables (broccoli, bell peppers, carrots, snap peas)"]
-        },
-        {
-          "FoodItem": "Tofu",
-          "IngredientsList": ["8 ounces tofu, cubed"]
-        },
-        {
-          "FoodItem": "Soy Sauce",
-          "IngredientsList": ["2 tablespoons soy sauce"]
-        },
-        {
-          "FoodItem": "Sesame Oil",
-          "IngredientsList": ["1 tablespoon sesame oil"]
-        },
-        {
-          "FoodItem": "Garlic",
-          "IngredientsList": ["2 cloves garlic, minced"]
-        }
-      ],
-      "Instructions": [
-        "In a wok or large skillet, heat sesame oil over medium-high heat.",
-        "Add minced garlic and stir-fry for about 30 seconds until fragrant.",
-        "Add tofu cubes and stir-fry until lightly browned.",
-        "Add mixed vegetables and continue to stir-fry until they are tender yet crisp, about 4-5 minutes.",
-        "Drizzle soy sauce over the stir-fry and toss everything together for another 1-2 minutes.",
-        "Serve hot as a healthy and delicious meal."
-      ]
-    },
-    {
-      "Title": "Lemon Butter Salmon",
-      "TotalTime": "30 minutes",
-      "ServingSize": "2 servings",
-      "Type": "Chef",
-      "Calories": 350,
-      "Protein": "25g",
-      "Carbs": "5g",
-      "Ingredients": [
-        {
-          "FoodItem": "Salmon fillets",
-          "IngredientsList": ["2 salmon fillets (6-8 ounces each)"]
-        },
-        {
-          "FoodItem": "Olive oil",
-          "IngredientsList": ["2 tablespoons olive oil"]
-        },
-        {
-          "FoodItem": "Salt and pepper",
-          "IngredientsList": ["Salt and pepper to taste"]
-        },
-        {
-          "FoodItem": "Garlic",
-          "IngredientsList": ["2 cloves garlic, minced"]
-        },
-        {
-          "FoodItem": "Chicken broth",
-          "IngredientsList": ["1/4 cup chicken broth"]
-        },
-        {
-          "FoodItem": "Lemon",
-          "IngredientsList": ["Juice of 1 lemon", "Zest of 1 lemon"]
-        },
-        {
-          "FoodItem": "Unsalted butter",
-          "IngredientsList": ["2 tablespoons unsalted butter"]
-        },
-        {
-          "FoodItem": "Fresh parsley",
-          "IngredientsList": ["Fresh parsley, chopped, for garnish"]
-        }
-      ],
-      "Instructions": [
-        "Preheat your grill to medium-high heat.",
-        "Brush the salmon fillets with olive oil and season them with salt and pepper to taste.",
-        "Place the salmon fillets on the grill and cook for about 3-4 minutes per side, or until the salmon is cooked to your desired level of doneness. The salmon should easily flake with a fork when done.",
-        "While the salmon is cooking, prepare the lemon butter sauce. In a small saucepan, heat the minced garlic over medium heat for about 1 minute until fragrant but not browned.",
-        "Add the chicken broth, lemon juice, and lemon zest to the saucepan. Let it simmer for 2-3 minutes to reduce slightly.",
-        "Reduce the heat to low, then whisk in the unsalted butter until the sauce is smooth and creamy. Season with salt and pepper to taste.",
-        "Once the salmon is done, transfer it to serving plates.",
-        "Drizzle the lemon butter sauce over the grilled salmon fillets.",
-        "Garnish with chopped fresh parsley for a pop of color and added flavor.",
-        "Serve your Chef-esque Grilled Salmon with Lemon Butter Sauce immediately with your choice of side dishes, such as steamed vegetables or a fresh salad."
-      ]
-    },
-    {
-      "Title": "Creamy Tomato Soup",
-      "TotalTime": "30 minutes",
-      "ServingSize": "4 servings",
-      "Type": "Cozy",
-      "Calories": 300,
-      "Protein": "8g",
-      "Carbs": "20g",
-      "Ingredients": [
-        {
-          "FoodItem": "Tomatoes",
-          "IngredientsList": ["4 cups canned tomatoes"]
-        },
-        {
-          "FoodItem": "Heavy Cream",
-          "IngredientsList": ["1/2 cup heavy cream"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, chopped"]
-        },
-        {
-          "FoodItem": "Garlic",
-          "IngredientsList": ["2 cloves garlic, minced"]
-        },
-        {
-          "FoodItem": "Basil",
-          "IngredientsList": ["1/4 cup fresh basil leaves"]
-        },
-        {
-          "FoodItem": "Olive Oil",
-          "IngredientsList": ["2 tablespoons olive oil"]
-        },
-        {
-          "FoodItem": "Salt and Pepper",
-          "IngredientsList": ["Salt and pepper to taste"]
-        }
-      ],
-      "Instructions": [
-        "In a large pot, heat olive oil over medium heat. Add chopped onion and minced garlic. Cook until onions are soft and translucent.",
-        "Add canned tomatoes to the pot, including the juice. Bring to a simmer and cook for about 15 minutes.",
-        "Using an immersion blender, blend the tomato mixture until smooth. If you don't have an immersion blender, carefully transfer the mixture to a blender and blend until smooth, then return it to the pot.",
-        "Stir in heavy cream and fresh basil leaves. Season with salt and pepper to taste.",
-        "Simmer for an additional 5-10 minutes, stirring occasionally.",
-        "Serve hot, garnished with additional fresh basil leaves if desired."
-      ]
-    },
-    {
-      "Title": "Homestyle Beef Stew",
-      "TotalTime": "2 hours",
-      "ServingSize": "6 servings",
+      "Title": "Baked Penne",
+      "TotalTime": "1 hour 10 minutes",
+      "ServingSize": "5 servings",
+      "Img": "/img/baked-penne.jpg",
       "Type": "Big",
-      "Calories": 400,
-      "Protein": "20g",
-      "Carbs": "30g",
-      "Ingredients": [
-        {
-          "FoodItem": "Beef Stew Meat",
-          "IngredientsList": ["2 pounds beef stew meat, cubed"]
-        },
-        {
-          "FoodItem": "Potatoes",
-          "IngredientsList": ["4 potatoes, peeled and cubed"]
-        },
-        {
-          "FoodItem": "Carrots",
-          "IngredientsList": ["4 carrots, sliced"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, chopped"]
-        },
-        {
-          "FoodItem": "Garlic",
-          "IngredientsList": ["2 cloves garlic, minced"]
-        },
-        {
-          "FoodItem": "Beef Broth",
-          "IngredientsList": ["4 cups beef broth"]
-        },
-        {
-          "FoodItem": "Tomato Paste",
-          "IngredientsList": ["2 tablespoons tomato paste"]
-        },
-        {
-          "FoodItem": "Flour",
-          "IngredientsList": ["2 tablespoons all-purpose flour"]
-        },
-        {
-          "FoodItem": "Olive Oil",
-          "IngredientsList": ["2 tablespoons olive oil"]
-        },
-        {
-          "FoodItem": "Salt and Pepper",
-          "IngredientsList": ["Salt and pepper to taste"]
-        }
-      ],
+      "Calories": 1040,
+      "Protein": "68g",
+      "Carbs": "86g",
+      "Ingredients": {
+        "Penne Pasta Noodles": [
+          "12 oz (340 g) penne pasta noodles uncooked, gluten free if needed"
+        ],
+        "Ground Beef and Tomato Sauce": [
+          "2 lbs (908 g) ground beef 85/15",
+          "28 oz (794 g) petite diced tomatoes (3 cans)",
+          "28 oz (794 g) crushed tomatoes (1 can)",
+          "1 medium (200 g) onion",
+          "1 tbsp (15 g) minced garlic",
+          "1 tbsp (2 g) dried oregano",
+          "1 tbsp (2 g) dried basil",
+          "10 oz (283 g) spinach (1 bag)",
+          "1 tbsp (15 g) oil",
+          "Salt and pepper to taste"
+        ],
+        "Cheese Topping": [
+          "15 oz (425 g) low-fat ricotta cheese",
+          "1 cup (112 g) shredded mozzarella cheese",
+          "½ cup (50 g) shredded parmesan cheese"
+        ]
+      },
       "Instructions": [
-        "In a large pot, heat olive oil over medium-high heat. Add beef stew meat and brown on all sides. Remove meat and set aside.",
-        "In the same pot, add chopped onion and minced garlic. Cook until onions are soft and translucent.",
-        "Sprinkle flour over the onions and garlic. Stir to coat evenly.",
-        "Return the browned beef stew meat to the pot. Add beef broth, tomato paste, potatoes, and carrots. Season with salt and pepper to taste.",
-        "Bring the mixture to a simmer, then reduce heat to low. Cover and simmer for about 1.5 to 2 hours, or until the beef is tender and the stew has thickened.",
-        "Serve hot as a comforting and hearty meal."
-      ]
-    },
-    {
-      "Title": "Mushroom Risotto",
-      "TotalTime": "40 minutes",
-      "ServingSize": "4 servings",
-      "Type": "Shrink",
-      "Calories": 350,
-      "Protein": "8g",
-      "Carbs": "45g",
-      "Ingredients": [
         {
-          "FoodItem": "Arborio Rice",
-          "IngredientsList": ["1 cup Arborio rice"]
+          "Section": "For the Beef and Tomato Sauce",
+          "Steps": [
+            "In a large pot over medium-high heat, add the ground beef and brown.",
+            "While the beef is cooking, dice the onion and add it to the pot with the beef. Add the minced garlic as well. Season lightly with salt and pepper.",
+            "Once the meat has browned, add in the cans of petite diced and crushed tomatoes. Stir in the oregano and basil. Allow the mixture to boil for 10-20 minutes to cook out the tomato flavor.",
+            "Chop up the spinach and add it to the pot. Stir to incorporate and wilt the leaves."
+          ]
         },
         {
-          "FoodItem": "Mushrooms",
-          "IngredientsList": ["8 ounces mushrooms, sliced"]
+          "Section": "For the Casserole",
+          "Steps": [
+            "Preheat your oven to 400°F.",
+            "While the beef and sauce are cooking, bring a large pot of water to a boil and cook the noodles according to the packaging. Drain the water.",
+            "Once the noodles and sauce have finished cooking, combine the two together and season with salt and pepper to taste.",
+            "In a large casserole or baking dish, add about half of the noodle mixture in a single layer. Spread out the ricotta cheese over the top of this layer and pour the remaining noodle mixture over the top.",
+            "Top the entire dish with the parmesan and mozzarella cheese.",
+            "Place the dish on a sheet pan to protect from any leakage and place it into the oven. Bake for 30 minutes. Watch it closely as you don't want to burn the cheese. If it gets too brown you can cover it with a piece of aluminum foil.",
+            "Allow the casserole to rest and cool before cutting into it."
+          ]
         },
         {
-          "FoodItem": "Chicken Broth",
-          "IngredientsList": ["4 cups chicken broth"]
-        },
-        {
-          "FoodItem": "Onion",
-          "IngredientsList": ["1 onion, finely chopped"]
-        },
-        {
-          "FoodItem": "White Wine",
-          "IngredientsList": ["1/2 cup white wine"]
-        },
-        {
-          "FoodItem": "Parmesan Cheese",
-          "IngredientsList": ["1/2 cup grated Parmesan cheese"]
-        },
-        {
-          "FoodItem": "Butter",
-          "IngredientsList": ["2 tablespoons butter"]
-        },
-        {
-          "FoodItem": "Olive Oil",
-          "IngredientsList": ["2 tablespoons olive oil"]
-        },
-        {
-          "FoodItem": "Salt and Pepper",
-          "IngredientsList": ["Salt and pepper to taste"]
+          "Section": "Plating",
+          "Steps": [
+            "This recipe makes 5 servings. Divide the tray into 5 equal-sized pieces and add to each of your dishes. They will last in the fridge for 5 days."
+          ]
         }
-      ],
-      "Instructions": [
-        "In a large saucepan, heat olive oil over medium heat. Add chopped onion and sliced mushrooms. Cook until onions are soft and mushrooms are browned.",
-        "Add Arborio rice to the saucepan. Cook and stir for about 2 minutes until the rice is lightly toasted.",
-        "Pour in white wine and cook until it is mostly absorbed by the rice.",
-        "Gradually add chicken broth, one cup at a time, stirring constantly and allowing the liquid to be absorbed before adding more.",
-        "Continue this process until the rice is creamy and tender, which should take about 20-25 minutes.",
-        "Stir in grated Parmesan cheese and butter. Season with salt and pepper to taste.",
-        "Serve hot as a rich and indulgent dish."
       ]
     }
+    
   ]
 }
