@@ -835,24 +835,6 @@ section.active .modal-box {
     background: transparent;
 }
 
-button {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    padding: 14px 22px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-
-    background: linear-gradient(45deg, var(--p-color), var(--s-color));
-
-}
-
-button:hover {
-    background: linear-gradient(45deg, #FF4500, #ffa047);
-
-}
-
 button.show-modal2,
 .modal-box2 {
     position: fixed;
