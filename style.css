@@ -943,25 +943,6 @@ button.show-modal2,
     margin: 0 10px;
 }
 
-.gorlock-img {
-    border-radius: 10px;
-    object-fit: cover;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1000;
-}
-
-
-
-.modal-box2 .buttons2,
-.modal-box2 h2,
-.modal-box2 h3,
-.modal-box2 h4 {
-    position: relative;
-    z-index: 1001; /* Ensure these elements are above the image */
-}
 
 .modal-box2 {
     display: flex;
