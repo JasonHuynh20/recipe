@@ -144,7 +144,259 @@
           ]
         }
       ]
+    },
+    {
+      "Title": "Beer-Battered Fish Tacos",
+      "TotalTime": "45 minutes",
+      "ServingSize": "4-5 people",
+      "Type": "Chef",
+      "Calories": "Who cares",
+      "Protein": "Dunno",
+      "Carbs": "Enough",
+      "Ingredients": {
+        "Beer Battered Fish": [
+          "2 lbs (1kg) cod (or whatever fish you want)",
+          "Enough oil for frying",
+          "1.5 cups (225g) of AP flour",
+          "1 tbsp (7g) paprika",
+          "1 tbsp (10g) galic powder",
+          "2 tsp (10g) white pepper",
+          "2.5 tsp (15g) fine sea salt",
+          "1 large egg",
+          "12 oz of a mexican beer (or light beer, but that's for losers)"
+        ],
+        "Slaw": [
+          "0.5 head of green cabbage sliced thinnly (mandoline)",
+          "1 Large red onion sliced thinnly (mandoline)",
+          "0.5 cup chopped cilantro",
+          "juice of 2 lemons",
+          "2 tbsp (30ml) olive oil",
+          "Salt and Pepper to taste"
+        ],
+        "Taco Sized Tortilla": [
+          "Just buy like 16 from the store (homemade takes way to much time, and i'd rather die"
+        ],
+        "Toppings": [
+          "Cilantro Leaves",
+          "Lime Wedges",
+          "Pickled Jalapenos"
+        ],
+        "Sauce": [
+          "0.5 cups (123g) sour cream",
+          "0.5 cups (115g) mayo",
+          "1 tbsp (15ml) hot sauce",
+          "2 tsp (5g) smoked paprika",
+          "1 tbsp (15ml) chili oil",
+          "1.5 tbsp (20ml) chinese black vinegar",
+          "2 cloves of grated garlic"
+        ]
+      },
+      "Instructions": [
+        {
+          "Section": "For the Beef Fish",
+          "Steps": [
+            "Cut the fish into 12cm x 5cm pieces.",
+            "Salt them on all sides.",
+            "Fill a pot or cast iron pan with oil (2 inches atleast) then heat it to 365°F.",
+            "In a small bowl, add 0.5 cups (60g) of the flour.",
+            "In a large bowl, add 1 cup (120g) of flour, the paprika, garlic powder, white pepper, salt, and the egg then whisk it together.",
+            "Slowly add the beer and whisk slowly (try not to knock out too much of the gas from the beer).",
+            "Take the fish, and dredge it in the plain flour and shake off the excess, then dredge it though the beer batter and let it drip off the excess for a bit.",
+            "Place the fish into the oil and fry for 5 mins, flipping half way through.",
+            "Fry in batches so you don't cool the oil down too much or croud the pot/pan."
+          ]
+        },
+        {
+          "Section": "For the Slaw",
+          "Steps": [
+            "Put the cabbage into a big bowl and squish/bruise it a bit.",
+            "Add all the other ingredients.",
+            "Mix it all together.",
+            "Add salt and pepper to taste."
+          ]
+        },
+        {
+          "Section": "For the Sauce",
+          "Steps": [
+            "Add everthing to a bowl and mix."
+          ]
+        },
+        {
+          "Section": "Plating",
+          "Steps": [
+            "Lay down a tortilla then add some slaw.",
+            "Add some pickled jalapenos and cilantro",
+            "Put on some of the fish.",
+            "Slap some sauce on.",
+            "Sqeeze some lime juice (very important)"
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Swedish Meatballs w Mashed Potatos",
+      "TotalTime": "45 minutes",
+      "ServingSize": "4-5 people",
+      "Type": "Chef",
+      "Calories": "Who cares",
+      "Protein": "Dunno",
+      "Carbs": "Enough",
+      "Ingredients": {
+        "Meatballs": [
+          "1 large onion",
+          "500g ground pork",
+          "500g ground beef",
+          "1 large egg",
+          "1 tbsp (15g) mustard",
+          "0.5 cups (120g) of heavy cream",
+          "1 cup (130g) bread crumbs",
+          "2 tsp (15g) all spice",
+          "2 tsp mixed herbs",
+          "salt and pepper"
+        ],
+        "Mashed Potatoes": [
+          "3 lbs Yuklon gold potato (or any yellow fleshed potatos)",
+          "0.75 cups (170g) salted butter",
+          "0.5 cups (120ml) milk",
+          "1 bundle of chives chopped"
+        ],
+        "Gravy": [
+          "400ml beef stock",
+          "500ml heavy cream",
+          "50g butter",
+          "0.33 cup AP flour"
+        ],
+        "Pickles": [
+          "Refer to the pickles recipe"
+        ],
+        "Lingonberry Jam": [
+          "Trust me. Buy 1 jar from ikea, it's way better than cranberry sauce"
+        ]
+      },
+      "Instructions": [
+        {
+          "Section": "For the BALLS",
+          "Steps": [
+            "Preheat oven to 400F.",
+            "Dice the onion and fry in butter until browned.",
+            "In a bowl, add the onion, and the rest of the meat ball ingredients and mix throughly.",
+            "Roll the mixture into balls and place them onto oven trays.",
+            "(can leave them in the fridge for an hour but I skip it cuz who cares right?)",
+            "Toss those bad boys into the oven and bake for 25 mins or until the internal temperature is 145F"
+          ]
+        },
+        {
+          "Section": "For the Mashed Potatoes",
+          "Steps": [
+            "I normally don't peel the potatos cuz the skins give it texture when done right and I'm lazy. If you are not peeling, you need to wash the potatoes",
+            "Cut the potatos into big chunks (cooks them faster).",
+            "Place potatos into a pot and cover with cold water.",
+            "Boil for 20 mins or until they are easily pierced with a fork.",
+            "Strain them then mash with a masher, add bunch of salt and pepper to taste (more salt than you think, I promise. Whatever you added, add more)",
+            "Add the rest of the potatos ingredients and mix.",
+            "Chop the chives and mix it in with the potatos."
+          ]
+        },
+        {
+          "Section": "For the Gravy",
+          "Steps": [
+            "Add all the ingredients to a sauce pot and let it boil and reduce to the thickness of your liking."
+          ]
+        },
+        {
+          "Section": "Plating",
+          "Steps": [
+            "Place some of the BALLS onto the plate.",
+            "Put some mashed taters next to it then drizzle gravy onto the balls and taters",
+            "Add some pickles on the side and a glob of the lingonberry jam."
+          ]
+        }
+      ]
+    },
+    {
+      "Title": "Miso Salmon w Asian Sides",
+      "TotalTime": " 2 hours 15 minutes",
+      "ServingSize": "4",
+      "Type": "Chef",
+      "Calories": "Who cares",
+      "Protein": "Dunno",
+      "Carbs": "Enough",
+      "Ingredients": {
+        "Miso Salmon": [
+          "4 skin on salmon fillets",
+          "4 tbsp miso (try to get white miso)",
+          "2 tbsp sake",
+          "2 tbsp soy sauce",
+          "0.5 tsp sesame oil"
+        ],
+        "Edamame Salad": [
+          "12 oz edamame",
+          "1 cup diced cucumbers",
+          "1 red bell pepper",
+          "2 green onion stalks",
+          "0.25 cup chopped cilatro",
+          "2 tsp sesame seeds",
+          "2 tbsp rice wine vinegar",
+          "2 tsp olive oil",
+          "1 tsp sesame oil",
+          "1 tsp tamari or soy sauce",
+          "2 tsp honey",
+          "0.5 tsp siracha",
+          "0.25 tsp ground ginger"
+        ],
+        "Spinach Gomaae": [
+          "1 bunch (227g) of spinach ",
+          "3 tbsp toasted sesame seeds",
+          "1 tbsp soy sauce",
+          "1 tbsp sugar"
+        ],
+        "Rice": [
+          "3 cups of uncooked rice (start cooking the rice at the begining)."
+        ]
+      },
+      "Instructions": [
+        {
+          "Section": "For the Salmon",
+          "Steps": [
+            "In a bowl, add the miso, sake, soy sauce, sesame oil and mix throughly.",
+            "Place the fish into the marinade then coat them, then let it rest in the fridge for 1-2 hours.",
+            "Bake in the oven at 425F for 20-30 mins or broil for until internal temp is 125F-130F."
+          ]
+        },
+        {
+          "Section": "For the Edamame Salad",
+          "Steps": [
+            "For the edamame, I normally buy the frozen already peeled ones from the store (cook according to the package, I use the microwave)",
+            "Dice the cucumber, bell pepper, green onions, and chop the cilantro.",
+            "In a jar or bowl, add the rice wine vinegar, olive oil, sesame oil, temari/soy sauce, honey, siracha, ground ginger.",
+            "If you added it to a jar, put the lid on and shake it, otherwise, whisk the ingredients in the bowl.",
+            "Add the salad inbgredients to a bowl, then drizzle the vinegrette over it.",
+            "Sprinkle some sesames seeds on and its done."
+          ]
+        },
+        {
+          "Section": "For the Spinach Gomaae",
+          "Steps": [
+            "Toast the sesame seeds in a pan until it smells good AF.",
+            "Once toasted, grind it into kind of a paste in a mortar and pestle.",
+            "Add the soy sauce and sugar then mix.",
+            "Prepare a bowl with ice water",
+            "In a pot, add water and salt to blanch the spinach, bring it to a boil.",
+            "Once the water is boiling, blanch the spinach for 45 seconds.",
+            "Dunk the spinach into the ice water to cool, then wring it dry.",
+            "Chop the spinach into 1 inch sections then mix the sesame paste thing in with it. "
+          ]
+        },
+        {
+          "Section": "Plating",
+          "Steps": [
+            "Put the salmon on the plate.",
+            "Put some edamame salad with the vinegrette in a seperate bowl.",
+            "Put the spinach gomaae on the plate.",
+            "Serve with rice."
+          ]
+        }
+      ]
     }
-    
   ]
 }
